@@ -57,4 +57,4 @@ gem 'activerecord-deprecated_finders'
 gem 'builder'
 gem 'minitest'
 gem 'tzinfo'
-gem 'taps'
+gem 'taps', :require => false
