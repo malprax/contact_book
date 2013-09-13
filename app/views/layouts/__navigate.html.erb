@@ -12,59 +12,9 @@
         <div class="container-fluid nav-collapse">
           <!-- .nav, .navbar-search, .navbar-form, etc -->
           <ul class="nav nav-pills ">
-              <li><%=link_to '<i class="icon-home"></i> Beranda'.html_safe, root_url%></li>           
+              <li><%=link_to '<i class="icon-home"></i> Home'.html_safe, root_url%></li>             </ul>
         
-              <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profil<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <!-- links -->
-                  <li><%=link_to "Akreditasi", akreditasi_pt_path%></li> 
-                  <li><%=link_to "Berita Dikti", beritadikti_path %></li>
-                  <li><%=link_to "Artikel Teknologi", artikel_path %></li>
-                  <li><%=link_to "Info Kampus", infokampus_path%></li>
-                  <li><%=link_to "Visi Dan Misi", visimisi_path%></li>                    
-                
-                     
-              </ul>
-              </li>
-       
-              <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dosen<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <!-- links -->
-                  <li><%=link_to "Staf", "#" %></li>             
-                  <li><%=link_to "Sertifikasi", panduansertifikasi_path %></li> 
-                  <li><%=link_to "Pengajaran", "#" %></li>  
-                             
-              </ul>
-              </li>
-       
-              <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mahasiswa<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <!-- links -->
-                  <li><%=link_to "Penelitian", penelitianmahasiswa_path %></li>            
-                  <li><%=link_to "KRS Online", krsonline_path %></li>
-                  <li><%=link_to "Tugas Akhir", "#" %></li>                
-                  <li><%=link_to "Transkrip Nilai", "#" %></li>                          
-                  <li><%=link_to "HMM", "#" %></li>
-                                  
-              </ul>
-              </li>
-       
-              <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Akademik <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <!-- links -->
-                  <li><%=link_to "Mata Kuliah", matakuliah_path %></li>
-                  <li><%=link_to "Jadwal Kuliah", "#" %></li>
-                  <li><%=link_to "Beasiswa", "#" %></li>
-                                    
-                
-                     
-              </ul>
-              </li>
-          </ul>              
+              
        
           <ul class="nav nav-pills pull-right">        
                   <% if user_signed_in? %>
