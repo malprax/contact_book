@@ -6,10 +6,20 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <%= render :partial => '_navigate' %> 
+<body> 
+  <%= render 'layouts/navigate' %>
 
-<%= yield %>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        
+  
+
+      <%= yield %>
+      </div>
+    </div>
+  </div>
+  
 
 </body>
 </html>
