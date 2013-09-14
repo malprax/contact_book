@@ -1,33 +1,29 @@
-<h1>Listing contacts</h1>
+<div align="center">
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Address</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.name %></td>
-        <td><%= contact.phone %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.address %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Contact', new_contact_path %>
+  <div id="myCarousel" class="carousel slide">  
+    <!-- Carousel items --> 
+  
+    <div class="carousel-inner"> 
+     
+    
+      <div class="item"><img src="http://www.hdwallpaperstop.com/wp-content/uploads/2013/07/free-desktop-wallpaper-widescreen-h.jpg" width="800" ></div>    
+     
+    
+      <div class="item active"><img src=" http://wallpapersus.com/wallpapers/2012/11/Paris-Panoramic-View-768x1366.jpg" width="800" ></div> 
+      
+      <div class="item"><img src=" http://wallzoa.com/wp-content/uploads/2013/08/high-resolution-widescreen-desktop-wallpaper.jpg" width="800" ></div> 
+    
+   
+      
+    
+    </div>  
+    <!-- Carousel nav -->  
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>  
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>  
+  </div> 
+</div>
+     
+<div>
+  <h3><center>We Find Good Place Fast</center></h3>
+  <p>￼We’re here to help you find your ideal home! We take the stress out of apartment searching by doing the work for you. Fill out one application, and for free we’ll take it from there! So what are you waiting for?</p>  
+</div>          
