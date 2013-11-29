@@ -8,20 +8,22 @@
 </head>
 <body> 
   <%#= render 'layouts/mainnavigate' %>
-  <%= render 'layouts/navigate' %>
+  
   
 
   <div class="container">
+    <%= render 'layouts/navigate' %>
     <div class="row-fluid">
       <div class="span12">
         
   
-
-      <%= yield %>
+      <div class="container"> <%= yield %></div>  
+     
       </div>
     </div>
+    <%= render 'layouts/footer' %>
   </div>
-  <%= render 'layouts/footer' %>
+  
 
   
 

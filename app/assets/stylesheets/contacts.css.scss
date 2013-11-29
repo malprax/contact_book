@@ -17,3 +17,8 @@ color: #777777;
 text-decoration: none;
 text-shadow: 0 10px 0 #ffffff;
 }
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+color: #ffffff;
+background-color: #0088cc;
+}
