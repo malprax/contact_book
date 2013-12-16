@@ -1,4 +1,6 @@
 ContactBook::Application.routes.draw do
+  resources :philosophies
+
   resources :contacts
 
   devise_for :users
