@@ -66,3 +66,5 @@ gem 'tzinfo'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
 gem 'cancan'
 
+#heroku db:push --confirm 
+
