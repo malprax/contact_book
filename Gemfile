@@ -64,6 +64,5 @@ gem 'builder'
 gem 'minitest'
 gem 'tzinfo'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
-gem 'paperclip'
 gem 'cancan'
 
