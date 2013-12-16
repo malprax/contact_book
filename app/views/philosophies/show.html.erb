@@ -5,6 +5,8 @@
   <%= raw @philosophy.input_text %>
 </p>
 
+ <%if user_signed_in? %>
 <%= link_to 'Edit', edit_philosophy_path(@philosophy) %>  
+<% end %>
 <%#= link_to 'Delete', @philosophy, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%#= link_to 'Back', philosophies_path %>

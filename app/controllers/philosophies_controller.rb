@@ -1,4 +1,5 @@
 class PhilosophiesController < ApplicationController
+  load_and_authorize_resource, except= :show
   before_action :set_philosophy, only: [:show, :edit, :update, :destroy]
 
   # GET /philosophies
