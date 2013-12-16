@@ -16,4 +16,5 @@
 //= require iconbootstrap
 //= require iconbootstrap.min
 //= require turbolinks
+//= require bootstrap-wysihtml5
 //= require_tree .

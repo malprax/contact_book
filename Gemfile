@@ -63,5 +63,7 @@ gem 'activerecord-deprecated_finders'
 gem 'builder'
 gem 'minitest'
 gem 'tzinfo'
-gem 'ckeditor_rails'
+gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
+gem 'paperclip'
+gem 'cancan'
 
