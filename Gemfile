@@ -63,7 +63,8 @@ gem 'activerecord-deprecated_finders'
 gem 'builder'
 gem 'minitest'
 gem 'tzinfo'
-gem "bootstrap-wysihtml5-rails", "~> 0.3.1.23"
+gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
+                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 gem 'cancan'
 
 #heroku db:push --confirm 
