@@ -31,4 +31,19 @@ Please feel free to use a different markup language if you do not plan to run
 21 Desember 2013
 1. Penambahan Gambar gambar
 2. Desain layout disesuaikan sendiri dulu nanti dikoreksi user
-3. Jangan mirip ais-indonesia.com
+3. Jangan mirip ais-indonesia.com 
+4. Padukan dengan pelita indonesia.com
+5. Estimasi launching januari pekan ke 2
+6. Coba bikin email server dengan menggunakan alamat domain yang ada bukan via gmail
+7. Kategori sekolah itu KB - TK - SD
+8. Kalu memang nda ada sebagai langkah awal 
+9. menu untuk saat ini tetap dan nanti menunggu ide dari user
+10. menu : about -> profil, history, program
+          education -> KB, TK, SD, Curriculum, Calender
+          
+          Info -> KB, TK, SD
+          Contact Us
+          
+11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
+
+

@@ -22,3 +22,15 @@ text-shadow: 0 10px 0 #ffffff;
 color: #ffffff;
 background-color: #0088cc;
 }
+
+.hero-unit{
+  background-image: url('/assets/brosur_runiah.jpg');
+  color: #fff;
+  height:340px;
+  text-align: right;
+  overflow: hidden;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-color: #F0ECBC;
+  background-size: cover;
+}
