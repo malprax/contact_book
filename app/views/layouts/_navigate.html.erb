@@ -12,7 +12,8 @@
 
          <div class="container-fluid">
            <!-- .nav, .navbar-search, .navbar-form, etc -->
-           <ul class="nav nav-tabs pull-right ">               
+           <ul class="nav nav-tabs pull-right ">
+                <li > <%= link_to 'Home', root_url %> </li>               
                 <% if user_signed_in? %>
                   <li > <%= link_to current_user.email, root_url %> </li>
                   <li >
