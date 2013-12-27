@@ -45,5 +45,15 @@ Please feel free to use a different markup language if you do not plan to run
           Contact Us
           
 11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
+12. warna warna website:
+   #373435 -> hitam
+   #A9ABAE -> abu abu
+   #FFD43C -> kuning
+   #FFEA6D -> kuning muda
+   #3B6054 -> hijau
+
+
+
+   
 
 
