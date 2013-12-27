@@ -45,12 +45,34 @@ Please feel free to use a different markup language if you do not plan to run
           Contact Us
           
 11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
-12. warna warna website:
+
+
+27 desember 2013
+1. Penambahan Gambar gambar
+2. Desain layout disesuaikan sendiri dulu nanti dikoreksi user (V)
+3. Jangan mirip ais-indonesia.com (V)
+4. Padukan dengan pelita indonesia.com
+5. Estimasi launching januari pekan ke 2
+6. Coba bikin email server dengan menggunakan alamat domain yang ada bukan via gmail
+7. Kategori sekolah itu KB - TK - SD (v)
+8. Kalu memang nda ada sebagai langkah awal ekspresi sendiri (v)
+9. menu untuk saat ini tetap dan nanti menunggu ide dari user (v)
+10. menu : about -> profil, history, program (v)
+          education -> KB, TK, SD, Curriculum, Calender
+          
+          Info -> KB, TK, SD
+          Contact Us
+          
+11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
+
+12. warna warna website berhasil didapat:(v)
    #373435 -> hitam
    #A9ABAE -> abu abu
    #FFD43C -> kuning
    #FFEA6D -> kuning muda
    #3B6054 -> hijau
+  
+
 
 
 
