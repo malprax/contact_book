@@ -19,10 +19,18 @@
     <%= f.label :input_text, "Input Text" %><br>
     <%= f.text_area :input_text, :class => "wysihtml5",  :id => "some-textarea" %>
   </div>
+  
+  <div class="field">
+    <%= f.label :parent_id, "Di isi untuk memindahkan posisi page pada navigasi yaitu di menu atau submenu" %><br>
+    <%= f.collection_select :parent_id,  Page.order(:name), :id, :name, include_blank: true %>
+  </div>
+  
   <div class="field">
     <%= f.label :slug, "Url Name (penulisan link yang akan tampil di website seperti url ditulis blabla maka akan tampil runiahschool.com/blabla)" %><br>
     <%= f.text_field :slug,  placeholder:"Input Url Name" %>
   </div>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

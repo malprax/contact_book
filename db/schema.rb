@@ -26,10 +26,12 @@ ActiveRecord::Schema.define(version: 20131227121843) do
     t.string   "name"
     t.text     "input_text"
     t.string   "slug"
+    t.string   "ancestry"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "pages", ["ancestry"], name: "index_pages_on_ancestry", using: :btree
   add_index "pages", ["slug"], name: "index_pages_on_slug", using: :btree
 
   create_table "philosophies", force: true do |t|
