@@ -67,7 +67,7 @@ gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 gem 'cancan'
 gem 'ancestry'
-# gem 'puma'
+gem 'puma'
 
 #heroku db:push --confirm 
 
