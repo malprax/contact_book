@@ -2,7 +2,7 @@
 <!-- Made By Kingmalprax@gmail.com, Makassar Desember 2013 -->
 <html>
 <head>
-  <title>Runiah School</title>
+  <title>RuniahSchool | <%= content_for?(:title)? yield(:title) : "Not Found" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= favicon_link_tag 'runiah_icon.ico', :rel => 'shortcut icon' %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>

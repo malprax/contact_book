@@ -1,7 +1,18 @@
+<% content_for :title, @page.name %>
 <p id="notice"><%= notice %></p>
 
-<h3>
- 
+<div id="submenu">
+  <%= render 'submenu_pages', pages:  @page.root.descendants.arrange %>
+</div>
+
+<div id="breadcrumbs">
+  <% @page.ancestors.each do |page| %>
+    <%= link_to page.name, page %> &gt;
+  <% end %>
+</div>
+
+
+<h3> 
   <% string = @page.name %>
   <%= string.capitalize %>
 </h3>
