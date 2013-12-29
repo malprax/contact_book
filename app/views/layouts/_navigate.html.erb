@@ -41,7 +41,8 @@
            <ul class="nav"> 
              <!-- Isi menu navigasi di sini -->
              <% Page.roots.each do |page| %>
-               <li><%= link_to page.name, page %></li>
+               <% nama = page.name %>
+               <li><%= link_to nama.capitalize, page %></li>
                <% end %>
              <!-- Akhir menu navigasi -->
            </ul>          

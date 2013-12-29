@@ -4,8 +4,7 @@
   <thead>
     <tr>
       <th>ID</h>
-      <th>Name</th>
-      <th>Input text</th>
+      <th>Name</th>     
       <th>Url Link</th>
       <th>Parent</th>
       <th></th>
@@ -17,9 +16,9 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr>
+        <% nama = page.name %>
         <td><%= page.id %></td>
-        <td><%= page.name %></td>
-        <td><%= page.input_text %></td>
+        <td><%= nama.capitalize %></td>        
         <td><%= page.slug %></td>
          <td><%= page.ancestry %></td>
         <td><%= link_to 'Show', page %></td>
