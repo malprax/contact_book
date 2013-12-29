@@ -38,51 +38,17 @@
          
          <div class="container-fluid nav-collapse">
            <!-- .nav, .navbar-search, .navbar-form, etc -->
-           <ul class="nav">
-             <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                 About
-                 <b class="caret"></b>
-               </a>
-               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
-                 <li><%=link_to "Profil", "#" %> </li>
-                 <li><%=link_to "History", "#" %></li>
-                 <li><%=link_to "Program", "#" %></li>
-                 <li><%#=link_to "Our Philosophy", philosophy_path(philosophy) %></li>                 
-               </ul>
-             </li>
+           <ul class="nav"> 
+             <!-- Isi menu navigasi di sini -->
+             <% Page.roots.each do |page| %>
+               <li><%= link_to page.name, page %></li>
+               <% end %>
+             <!-- Akhir menu navigasi -->
            </ul>          
                
            
-           <ul class="nav">
-             <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                 Education
-                 <b class="caret"></b>
-               </a> 
-                             
-               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" >
-                 <li><%=link_to "KB", "#" %> </li>
-                 <li><%=link_to "TK", "#" %></li>
-                 <li><%=link_to "SD", "#" %></li>                 
-                 <li class="dropdown-submenu">
-                     <a tabindex="-1" href="#">Curriculum Area</a>
-                     <ul class="dropdown-menu">
-                       <li><%=link_to "English", "#" %></li>
-                       <li><%=link_to "Mathematics", "#" %></li> 
-                       <li><%=link_to "Sience", "#" %></li>
-                       <li><%=link_to "Arts", "#" %></li>
-                       <li><%=link_to "Information Technology", "#" %></li>
-                       <li><%=link_to "Humanities", "#" %></li>                                
-                     </ul>
-                 </li>            
-                 <li><%=link_to "Calender", "#" %></li>               
-               </ul>
-             </li>
-           </ul>  
-                   
-           <ul class="nav"><li><%=link_to 'Info'.html_safe, root_url%></li>  </ul>
-           <ul class="nav"><li><%=link_to 'Contact Us'.html_safe, root_url%></li> </ul>             
+           
+                 
                 
                 
                
