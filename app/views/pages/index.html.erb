@@ -3,9 +3,10 @@
 <table class="table">
   <thead>
     <tr>
+      <th>ID</h>
       <th>Name</th>
       <th>Input text</th>
-      <th>Slug</th>
+      <th>Url Link</th>
       <th>Parent</th>
       <th></th>
       <th></th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr>
+        <td><%= page.id %></td>
         <td><%= page.name %></td>
         <td><%= page.input_text %></td>
         <td><%= page.slug %></td>
