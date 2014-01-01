@@ -70,7 +70,7 @@ gem 'ancestry'
 gem 'puma'
 gem "paperclip", "~> 3.0"
 gem "paperclip-dropbox", ">= 1.1.7"
-
+gem 'dropbox-sdk'
 
 #heroku db:push --confirm 
 
