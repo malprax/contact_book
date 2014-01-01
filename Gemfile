@@ -68,6 +68,9 @@ gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
 gem 'cancan'
 gem 'ancestry'
 gem 'puma'
+gem "paperclip", "~> 3.0"
+gem "paperclip-dropbox", ">= 1.1.7"
+
 
 #heroku db:push --confirm 
 

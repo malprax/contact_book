@@ -1,4 +1,6 @@
 ContactBook::Application.routes.draw do
+  resources :images
+
   resources :pages, only: [:index, :new, :create]
   resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'
