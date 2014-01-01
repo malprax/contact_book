@@ -3,6 +3,7 @@ class Page < ActiveRecord::Base
   validates :slug, uniqueness: true, presence: true, exclusion: {in: %w[signup login]}
   before_validation :generate_slug
   has_ancestry
+  attr_writer :current_page
   
   
   def to_param
@@ -15,5 +16,7 @@ class Page < ActiveRecord::Base
   
   def find_page
     @page = Page.find_by_slug(params[:id].split('/').last)
-  end
+  end  
+  
+ 
 end

@@ -1,0 +1,44 @@
+
+<% content_for :title, "Home" %>
+
+
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <div class="hero-unit">
+        <h1>Kelompok Bermain!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>
+          <%= link_to 'Visit Us', kelompok_bermain_path, class: "btn btn-large btn-success" %>
+        </p>
+      </div>
+    </div>
+    <div class="item"><div class="hero-unit">
+  <h1>Taman Kanak - kanak!</h1>
+  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p>
+    <%= link_to 'Visit Us', taman_kanak_kanak_path, class: "btn btn-large btn-success" %>
+  </p>
+</div></div>
+    <div class="item"><div class="hero-unit">
+  <h1>Sekolah Dasar!</h1>
+  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p>
+    <%= link_to 'Visit Us', sekolah_dasar_path, class: "btn btn-large btn-success" %>
+   
+  </p>
+</div></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+      
+

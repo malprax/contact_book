@@ -3,7 +3,10 @@ ContactBook::Application.routes.draw do
   resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'
   
-
+  get '/kelompok_bermain' => 'pages#show', :defaults => { :id => '5' }
+  get '/taman_kanak_kanak' => 'pages#show', :defaults => { :id => '6' }
+  get '/sekolah_dasar' => 'pages#show', :defaults => { :id => '12' }
+  
 
   resources :philosophies
   
@@ -16,7 +19,7 @@ ContactBook::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'contacts#index'
+   root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
