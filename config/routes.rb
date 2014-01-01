@@ -11,6 +11,7 @@ ContactBook::Application.routes.draw do
   resources :contacts
 
   devise_for :users, path_names: {sign_in: "sign_in", sign_out: "logout"}
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
