@@ -1,14 +1,16 @@
 ContactBook::Application.routes.draw do
   resources :pages, only: [:index, :new, :create]
   resources :pages, path:"", except: [:index, :new, :create]
-  get '*id', to: 'pages#show'
+  # get '*id', to: 'pages#show'
+  
+
 
   resources :philosophies
   
 
   resources :contacts
 
-  devise_for :users
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
