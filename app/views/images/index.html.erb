@@ -12,13 +12,13 @@
   </thead>
 
   <tbody>
-    <% @images.each do |i| %>
+    <% Image.all.each do |p| %>
       <tr>
-        <td><%= i.title %></td>
-        <td><%= image_tag image.i %></td>
-        <td><%= link_to 'Show', i %></td>
-        <td><%= link_to 'Edit', edit_image_path(i) %></td>
-        <td><%= link_to 'Destroy', i, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= p.title %></td>
+        <td><%= image_tag p.picture %></td>
+        <td><%= link_to 'Show', p %></td>
+        <td><%= link_to 'Edit', edit_image_path(p) %></td>
+        <td><%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
