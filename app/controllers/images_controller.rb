@@ -3,8 +3,7 @@ class ImagesController < ApplicationController
 
   # GET /images
   # GET /images.json
-  def index
-    @image = Image.new
+  def index   
     @images = Image.all
   end
 
@@ -70,6 +69,6 @@ class ImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:title, :picture_file_name, :picture_content_type, :picture_file_size, :picture_updated_at)
+      params.require(:image).permit(:title, :picture)
     end
 end

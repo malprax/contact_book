@@ -1,37 +1,10 @@
 
-<%=form_for  @image, :url => images_path, :html => { :multipart => true } do |f| %>
-<div class="field">
-  <%= f.label :title %><br>
-  <%= f.text_field :title %>
-</div>
-<div class="field">
-  <%= f.label :picture_file_name %><br>
-  <%= f.file_field :picture_file_name %>
-</div>
-
-<div class="actions">
-  <%= f.submit %>
-</div>
-<% end %>
-
-
-
-
-
-
-
-
-
-<!-- <h1>Listing images</h1>
+<h1>Listing images</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Picture file name</th>
-      <th>Picture content type</th>
-      <th>Picture file size</th>
-      <th>Picture updated at</th>
+      <th>Title</th>      
       <th></th>
       <th></th>
       <th></th>
@@ -39,21 +12,18 @@
   </thead>
 
   <tbody>
-    <% @images.each do |image| %>
+    <% @images.each do |i| %>
       <tr>
-        <td><%= image.title %></td>
-        <td><%= image.picture_file_name %></td>
-        <td><%= image.picture_content_type %></td>
-        <td><%= image.picture_file_size %></td>
-        <td><%= image.picture_updated_at %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= i.title %></td>
+        <td><%= image_tag image.i %></td>
+        <td><%= link_to 'Show', i %></td>
+        <td><%= link_to 'Edit', edit_image_path(i) %></td>
+        <td><%= link_to 'Destroy', i, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br> -->
+<br>
 
 <%= link_to 'New Image', new_image_path %>
