@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  
   before_action :authenticate_user!, except: [:show]
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
@@ -71,6 +72,6 @@ class PagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
-      params.require(:page).permit(:name, :input_text, :slug, :parent_id)
+      params.require(:page).permit(:name, :input_text, :slug, :ancestry)
     end
 end
