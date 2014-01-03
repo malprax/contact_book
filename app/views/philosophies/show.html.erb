@@ -7,7 +7,7 @@
 
  <%if user_signed_in? %>
   <% if can? :update, philosophy %>
-<%= link_to 'Edit', edit_philosophy_path(@philosophy) %>  
+    <%= link_to 'Edit', edit_philosophy_path(@philosophy) %>  
  <% end %>
 <% end %>
 <%#= link_to 'Delete', @philosophy, method: :delete, data: { confirm: 'Are you sure?' } %>
