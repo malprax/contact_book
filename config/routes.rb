@@ -5,9 +5,9 @@ ContactBook::Application.routes.draw do
   resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'
   
-  get '/kelompok_bermain' => 'pages#show', :defaults => { :id => '5' }
-  get '/taman_kanak_kanak' => 'pages#show', :defaults => { :id => '6' }
-  get '/sekolah_dasar' => 'pages#show', :defaults => { :id => '12' }
+  get '/kelompok_bermain' => 'pages#show'
+  get '/taman_kanak_kanak' => 'pages#show'
+  get '/sekolah_dasar' => 'pages#show'
   
   
 
