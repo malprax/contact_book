@@ -17,10 +17,6 @@ ActiveRecord::Schema.define(version: 20140102140657) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "picture_file_name"
-    t.string   "picture_content_type"
-    t.integer  "picture_file_size"
-    t.datetime "picture_updated_at"
   end
 
   create_table "pages", force: true do |t|
