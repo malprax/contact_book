@@ -23,3 +23,8 @@ pages = Page.create([
   {name: 'kalender', input_text: 'welcome to kalender tk page', slug:'kalender_tk', ancestry: '2/6'},
   {name: 'kalender', input_text: 'welcome to kalender sd page', slug:'kalender_sd', ancestry: '2/7'},
   ])
+
+  users= User.create([
+    {email: "kingmalprax@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl"},
+    {email: "abubay12@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl"}
+    ])
