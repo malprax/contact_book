@@ -9,11 +9,7 @@ ContactBook::Application.routes.draw do
   get '/taman_kanak_kanak' => 'pages#show', :defaults => { :id => '6' }
   get '/sekolah_dasar' => 'pages#show', :defaults => { :id => '12' }
   
-
-  resources :philosophies
   
-
-  resources :contacts
 
   devise_for :users, path_names: {sign_in: "sign_in", sign_out: "logout"}
   
