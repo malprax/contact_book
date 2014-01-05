@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140102140657) do
 
-  create_table "contacts", force: true do |t|
-    t.string   "name"
-    t.string   "phone"
-    t.string   "email"
-    t.string   "address"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "images", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
@@ -43,12 +34,6 @@ ActiveRecord::Schema.define(version: 20140102140657) do
 
   add_index "pages", ["ancestry"], name: "index_pages_on_ancestry", using: :btree
   add_index "pages", ["slug"], name: "index_pages_on_slug", using: :btree
-
-  create_table "philosophies", force: true do |t|
-    t.text     "input_text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
