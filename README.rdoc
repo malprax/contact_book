@@ -46,7 +46,7 @@ Please feel free to use a different markup language if you do not plan to run
           
 11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
 
-
+################################################################################################################### 
 27 desember 2013
 1. Penambahan Gambar gambar
 2. Desain layout disesuaikan sendiri dulu nanti dikoreksi user (V)
@@ -71,10 +71,35 @@ Please feel free to use a different markup language if you do not plan to run
    #FFD43C -> kuning
    #FFEA6D -> kuning muda
    #3B6054 -> hijau
+###################################################################################################################   
    
 29 desember 2013
 13. bagaimana jika halaman yang terpilih mendapatkan class "active"??
 14. bagaimana jika halaman yang dibuat selalu diawali dengan huruf besar keluarannya
+
+################################################################################################################### 
+5 januari 2013
+
+4. Padukan dengan pelita indonesia.com
+5. Estimasi launching januari pekan ke 2
+6. Coba bikin email server dengan menggunakan alamat domain yang ada bukan via gmail
+11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
+12. warna warna website berhasil didapat:
+   #373435 -> hitam
+   #A9ABAE -> abu abu
+   #FFD43C -> kuning
+   #FFEA6D -> kuning muda
+   #3B6054 -> hijau
+16. referensi www.al-taqwa.vic.edu.au (direktur al azhar sekarang)
+17. pembelian domain
+
+
+Intinya sekarang progress website:
+1. Penambahan mail server
+2. Perbaikan tampilan desain web
+3. Pembelian domain www.runiah-school.com
+
+###################################################################################################################
   
 
 
