@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140102140657) do
+ActiveRecord::Schema.define(version: 20140106222706) do
 
   create_table "images", force: true do |t|
     t.string   "title"

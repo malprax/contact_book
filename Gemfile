@@ -71,6 +71,6 @@ gem 'puma'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
-
+gem 'globalize', '~> 4.0.0'
 #heroku db:push --confirm 
 
