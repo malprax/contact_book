@@ -44,32 +44,45 @@
          
          <div class="container-fluid nav-collapse">
            <!-- .nav, .navbar-search, .navbar-form, etc -->
-           <ul class="nav"> 
-             <!-- Isi menu navigasi di sini -->
-             <% Page.roots.each do |page| %>
-               <% nama = page.name %>
-               <li><%= link_to nama.capitalize, page%></li>
-               <% end %>
+                         
                <ul class="nav nav-pills">
-                 <li class="dropdown">
+                 <!-- Isi menu navigasi di sini -->
+                 <% Page.roots.each do |page| %>                    
+                     <li class="dropdown">
+                       <a class="dropdown-toggle" data-toggle="dropdown">
+                         <%= link_to page.name, page %>
+                         <% unless page.children.empty? %>
+                          
+                       </a> 
+                       <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">
+                             <% page.children.each do |subpage| %>
+                               <li><%= link_to (subpage.name), subpage %></li>
+                             <% end %>
+                                              
+                       </ul> 
+                         <% end %>                                       
+                     </li>                
+                <% end %>
+                   
+                 <!-- <li class="dropdown" >
                    <a class="dropdown-toggle"
                       data-toggle="dropdown"
                       href="#">
                       Islamic Studies
                        <b class="caret"></b>
                      </a>
-                   <ul class="dropdown-menu">
-                     <!-- links -->
-                     <li>Qur'an</li>
-                     <li>Akhlakul Karimah</li>
-                     <li>Sholat dan Do'a</li>
-                    
+                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">
+                     
+                     <li><%= link_to 'Quran', "#" %></li>
+                     <li><%= link_to 'Akhlakul Karimah', "#" %></li>
+                     <li><%= link_to 'Sholat dan Doa', "#" %></li>                    
                    </ul>
-                 </li>
+                 </li> -->
+                 
+                  <!-- Akhir menu navigasi -->
                </ul>
-             <!-- Akhir menu navigasi -->
-           </ul>          
-               
+            
+         
            
            
                  

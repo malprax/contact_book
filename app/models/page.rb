@@ -4,7 +4,6 @@ class Page < ActiveRecord::Base
   before_validation :generate_slug
   has_ancestry
   attr_writer :current_page
-  translates :name, :input_text, :slug, :ancestry
   
   
   def to_param
