@@ -13,7 +13,7 @@
          <div class="container-fluid">
            <!-- .nav, .navbar-search, .navbar-form, etc -->
            <ul class="nav nav-tabs pull-right ">
-                <li > <%= link_to 'Home', root_url %> </li>               
+                        
                 <% if user_signed_in? %>
                   <li > <%= link_to current_user.email, root_url %> </li>
                   <li >
@@ -47,7 +47,7 @@
                          
                <ul class="nav nav-pills">
                  <!-- Isi menu navigasi di sini -->
-                 <% Page.roots.each do |page| %>                    
+                 <!-- <% Page.roots.each do |page| %>                    
                      <li class="dropdown">
                        <a class="dropdown-toggle" data-toggle="dropdown">
                          <%= link_to page.name, page %>
@@ -62,22 +62,74 @@
                        </ul> 
                          <% end %>                                       
                      </li>                
-                <% end %>
-                   
-                 <!-- <li class="dropdown" >
+                <% end %> -->
+                 <li > <%= link_to 'Home', root_url %> </li>         
+                 <li class="dropdown" >
                    <a class="dropdown-toggle"
                       data-toggle="dropdown"
                       href="#">
-                      Islamic Studies
+                      About Us
                        <b class="caret"></b>
                      </a>
-                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">
-                     
-                     <li><%= link_to 'Quran', "#" %></li>
-                     <li><%= link_to 'Akhlakul Karimah', "#" %></li>
-                     <li><%= link_to 'Sholat dan Doa', "#" %></li>                    
+                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                     <li><%= link_to 'Our Philosophy', our_philosophy_path %></li>
+                     <li><%= link_to 'Vision And Mission', vision_and_mission_path %></li>
+                     <li><%= link_to 'Founder Message', founder_message_path %></li>
+                     <li><%= link_to 'High-Quality Education', high_quality_education_path %></li>
+                     <li><%= link_to 'Right And Responsibility', right_and_responsibility_path %></li>                                 
                    </ul>
-                 </li> -->
+                 </li>
+                 <li class="dropdown" >
+                   <a class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#">
+                      Our Campus
+                       <b class="caret"></b>
+                     </a>
+                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                     <li><%= link_to 'Head Of School Welcome', head_of_school_welcome_path %></li>
+                     <li><%= link_to 'Facilities', facilities_path %></li>
+                     <li><%= link_to 'Our Staff', our_staff_path %></li>                               
+                   </ul>
+                 </li>
+                 <li class="dropdown" >
+                   <a class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#">
+                      Curriculum
+                       <b class="caret"></b>
+                     </a>
+                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                     <li><%= link_to 'Pre-school', pre_school_path %></li>
+                     <li><%= link_to 'Primary School', primary_school_path %></li>                                             
+                   </ul>
+                 </li>
+                 <li class="dropdown" >
+                   <a class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#">
+                      Programs
+                       <b class="caret"></b>
+                     </a>
+                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                     <li><%= link_to 'Language Support', language_support_path %></li>
+                     <li><%= link_to 'Learning Support For Special Need', learning_support_for_special_need_path %></li>
+                     <li><%= link_to 'Student Welfare Program', student_welfare_program_path %></li>
+                     <li><%= link_to 'Excursion / Fieldtrip', excursion_or_fieldtrip_path %></li>
+                     <li><%= link_to 'Extracurricular Activity', extracurricular_activity_path %></li>
+                     <li><%= link_to 'Anti Bullying Program', anti_bullying_program_path %></li> 
+                     <li class="dropdown-submenu">
+                         <a tabindex="-1" href="#">Islamic Studies</a>
+                         <ul class="dropdown-menu">
+                           <li><%= link_to 'Quran', quran_path %></li>
+                           <li><%= link_to 'Akhlakul Karimah', akhlakul_karimah_path %></li>
+                           <li><%= link_to 'Sholat dan Doa', sholat_dan_doa_path %></li> 
+                         </ul>
+                     </li>                   
+                   </ul>
+                 </li>
+                 <li > <%= link_to 'Employment', employment_path %> </li>   
+                 <li > <%= link_to 'Contact Us', contact_us_path %> </li>   
                  
                   <!-- Akhir menu navigasi -->
                </ul>

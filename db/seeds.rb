@@ -29,7 +29,7 @@ pages = Page.create([
   {name: 'facilities', input_text: 'facilities page', slug:'facilities', ancestry: '5'},
   {name: 'our staff', input_text: 'welcome to our_staff page', slug:'our_staff', ancestry: '5'},
   {name: 'our philosophy', input_text: 'head of our philosophy', slug:'our_philosophy', ancestry: '6'},
-  {name: 'vission and mission', input_text: 'vission and mission', slug:'vission_and_mission', ancestry: '6'},
+  {name: 'vision and mission', input_text: 'vision and mission', slug:'vision_and_mission', ancestry: '6'},
   {name: 'founder message', input_text: 'founder_message page', slug:'founder_message', ancestry: '6'},
   {name: 'high quality education', input_text: 'welcome to high quality education page', slug:'high_quality_education', ancestry: '6'},
   {name: 'right and responsibility', input_text: 'welcome to right and responsibility', slug:'right_and_responsibility', ancestry: '6'},

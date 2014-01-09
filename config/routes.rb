@@ -5,11 +5,37 @@ ContactBook::Application.routes.draw do
   resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'
   
+  #about us 
+  get '/our_philosophy' => 'pages#show'
+  get '/vision_and_mission' => 'pages#show'  
+  get '/founder_message' => 'pages#show'
+  get '/high_quality_education' => 'pages#show'
+  get '/right_and_responsibility' => 'pages#show'
+  
+  #our campus
+  get '/facilities' => 'pages#show'
+  get '/our_staff' => 'pages#show'
+  get '/head_of_school_welcome' => 'pages#show'
+  
+  #curriculum
   get '/pre_school' => 'pages#show'
   get '/primary_school' => 'pages#show'
-  get '/about_us' => 'pages#show'
   
-  
+  #programs
+  get '/language_support' => 'pages#show'
+  get '/learning_support_for_special_need' => 'pages#show'
+  get '/student_welfare_program' => 'pages#show'
+  get '/excursion_or_fieldtrip' => 'pages#show'
+  get '/extracurricular_activity' => 'pages#show'
+  get '/anti_bullying_program' => 'pages#show'
+  get '/quran' => 'pages#show'
+  get '/akhlakul_karimah' => 'pages#show'
+  get '/sholat_dan_doa' => 'pages#show'
+    
+  #employment
+  get '/employment' => 'pages#show'
+  #contact
+  get '/contact_us' => 'pages#show'
 
   devise_for :users, path_names: {sign_in: "sign_in", sign_out: "logout"}
   
