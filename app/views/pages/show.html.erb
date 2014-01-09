@@ -3,10 +3,9 @@
 <!-- container -->
     <div class="row">
       <div class="span3">
-        <div class="well sidebar-nav">
-          <h3>Sidebar</h3>
+        <div class="well sidebar-nav">          
           <ul class="nav nav-list">
-            <li class="nav-header">Sidebar</li>
+            <li class="nav-header"><h5>Sidebar</h5></li>
             <li><%= render 'submenu_pages', pages:  @page.root.descendants.arrange %></li>
           </ul>
         </div><!--/.well -->
@@ -14,29 +13,25 @@
       
       <div class="span9">
         <%= bootstrap_flash %>
-        <div id="breadcrumbs">
+        <div class="breadcrumb">
           <% @page.ancestors.each do |page| %>
             <%= link_to page.name, page %> &gt;
           <% end %>
         </div>
 
-
         <h3> 
           <% string = @page.name %>
           <%= string.capitalize %>
         </h3>
-
         <p>  
           <%= @page.input_text %>
         </p>
-
         <% if user_signed_in? %>
           <% if can? :update, page_path %>
-        <%= link_to 'Edit', edit_page_path(@page) %> |
-        <%= link_to 'Back', pages_path %>
-        <% end %>
-        <% end %>
-        
+            <%= link_to 'Edit', edit_page_path(@page) %> |
+            <%= link_to 'Back', pages_path %>
+          <% end %>
+        <% end %>        
       </div>
       
     </div><!--/row-->
