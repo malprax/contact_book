@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 pages = Page.create([
-  {name: 'contact us', input_text: 'welcome to contact_us', slug:'contact' },
+  {name: 'contact us', input_text: 'welcome to contact_us', slug:'contact_us' },
   {name: 'employment', input_text: 'welcome to employment_page', slug:'employment'},
   {name: 'programs', input_text: 'welcome to programs', slug:'programs'},
   {name: 'curriculum', input_text: 'welcome to curriculum page', slug:'curriculum'},
