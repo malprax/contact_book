@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<!-- Made By Kingmalprax@gmail.com, Makassar Desember 2013 -->
-<html>
-<head>
-  <title>RuniahSchool | <%= content_for?(:title)? yield(:title) : "Not Found" %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= favicon_link_tag 'runiah_icon.ico', :rel => 'shortcut icon' %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body> 
-  <%#= render 'layouts/mainnavigate' %>  
-  <%= render 'layouts/navigate' %>
-  
-  
-  <div class="container"> <%= yield %></div>  
-     
-  <%= render 'layouts/footer' %>
-  </div>
-  
+<html lang="en">
+  <head>
+    <%= render 'layouts/head_tag' %>
+  </head>
+  <body>
 
-  
-
-</body>
+   <%= render 'layouts/navigate' %>
+    <div class="container">        
+      <%= bootstrap_flash %>
+      <%= yield %>       
+      <footer>
+        <%= render 'layouts/footer' %>
+      </footer>
+    </div> <!-- /container -->
+  </body>
 </html>
