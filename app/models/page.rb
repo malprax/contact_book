@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :name, :input_text, :slug, :ancestry
+  attr_accessible :name, :input_text, :slug, :parent_id
   validates :slug, uniqueness: true, presence: true, exclusion: {in: %w[signup login]}
   before_validation :generate_slug
   has_ancestry
