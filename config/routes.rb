@@ -31,6 +31,7 @@ ContactBook::Application.routes.draw do
   get '/quran' => 'pages#show'
   get '/akhlakul_karimah' => 'pages#show'
   get '/sholat_dan_doa' => 'pages#show'
+  
     
   #employment
   get '/employment' => 'pages#show'
