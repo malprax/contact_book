@@ -6,6 +6,7 @@ ContactBook::Application.routes.draw do
   # get '*id', to: 'pages#show'
   
   #about us 
+  get '/about' => 'pages#show'
   get '/our_philosophy' => 'pages#show'
   get '/vision_and_mission' => 'pages#show'  
   get '/founder_message' => 'pages#show'
