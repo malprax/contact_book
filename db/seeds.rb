@@ -11,7 +11,7 @@ pages = Page.create([
   {name: 'employment', input_text: 'welcome to employment_page', slug:'employment'},
   {name: 'programs', input_text: 'welcome to programs', slug:'programs'},
   {name: 'curriculum', input_text: 'welcome to curriculum page', slug:'curriculum'},
-  {name: 'our campus', input_text: 'welcome to our campus', slug:'our campus'},
+  {name: 'our campus', input_text: 'welcome to our campus', slug:'our_campus'},
   {name: 'about us', input_text: 'welcome to about_uspage', slug:'about'},
   {name: 'language support', input_text: 'welcome to language_support page', slug:'language_support', ancestry: '3'},
   {name: 'learning support for special need', input_text: 'welcome to learning support_for_special_need', slug:'learning_support_for_special_need', ancestry: '3'},

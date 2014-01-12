@@ -3,8 +3,8 @@ ContactBook::Application.routes.draw do
 
   resources :images
 
-  resources :pages#, only: [:index, :new, :create]
-  #resources :pages, path:"", except: [:index, :new, :create]
+  resources :pages, only: [:index, :new, :create]
+  resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'
   
   ####################### Navigasi #########################################
@@ -41,8 +41,8 @@ ContactBook::Application.routes.draw do
   get '/employment' => 'pages#show'
   
   #contact us  
-  get 'contact' => 'contact#new', :as => 'contact'
-  post 'contact' => 'contact#create'
+  #get 'contact' => 'contact#new', :as => 'contact'
+  #post 'contact' => 'contact#create'
   #######################################################################
 
   devise_for :users, path_names: {sign_in: "sign_in", sign_out: "logout"}
