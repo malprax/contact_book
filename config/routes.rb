@@ -1,4 +1,6 @@
 ContactBook::Application.routes.draw do
+ 
+
   resources :images
 
   resources :pages#, only: [:index, :new, :create]
@@ -38,8 +40,7 @@ ContactBook::Application.routes.draw do
   #employment
   get '/employment' => 'pages#show'
   
-  #contact us
-  
+  #contact us  
   get 'contact' => 'contact#new', :as => 'contact'
   post 'contact' => 'contact#create'
   #######################################################################
