@@ -1,6 +1,13 @@
 ContactBook::Application.routes.draw do
  
 
+  resources :users do
+             resources :messages do
+               collection do
+                 post :delete_selected
+               end
+             end
+           end
   resources :images
 
   resources :pages, only: [:index, :new, :create]
