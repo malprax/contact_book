@@ -1,4 +1,4 @@
-<% content_for :title, @page.name %>
+<%# content_for :title, @page.name %>
 
 <!-- container -->
     <div class="row">
@@ -7,7 +7,7 @@
         <div class="well sidebar-nav">          
           <ul class="nav nav-list">
             <li class="nav-header"><h5>Sidebar</h5></li>
-            <li><%= render 'submenu_pages', pages:  @page.root.descendants.arrange %></li>
+            <li><%#= render 'submenu_pages', pages:  @page.root.descendants.arrange %></li>
           </ul>
         </div><!--/.well -->
       </div><!--/span-->
@@ -16,17 +16,17 @@
       <div class="span9">
         <%= bootstrap_flash %>
         <div class="breadcrumb">
-          <% @page.ancestors.each do |page| %>
-            <%= link_to page.name, page %> &gt;
-          <% end %>
+          <%# @page.ancestors.each do |page| %>
+            <%#= link_to page.name, page %> &gt;
+          <%# end %>
         </div>
 
         <h3> 
-          <% string = @page.name %>
-          <%= string.capitalize %>
+          <%# string = @page.name %>
+          <%#= string.capitalize %>
         </h3>
         <p>  
-          <%= @page.input_text %>
+          <%#= @page.input_text %>
         </p>
         <% if user_signed_in? %>
           <% if can? :update, page_path %>

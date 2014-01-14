@@ -1,3 +1,4 @@
+<%# content_for :title,"messages" %>
 <% form_tag delete_selected_user_messages_path(@user, :method => :post) do %>
 	<% if params[:mailbox] == "sent" %>
 			<%= render :partial => "sent" %>
