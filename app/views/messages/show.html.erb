@@ -1,13 +1,19 @@
-<p><strong>From:</strong> <%= @message.sender == @user ? link_to("You", user_path(@user)) : link_to(h(@message.sender.login), user_path(@message.sender)) %></p>
-<p><strong>Received:</strong> <%= @message.created_at.to_s(:long) %></p>
-<p><strong>To:</strong> <%= @message.recipient == @user ? link_to("You", user_path(@user)) : link_to(h(@message.recipient.login), user_path(@message.recipient)) %></p>
+<p id="notice"><%= notice %></p>
+
 <p>
-  <strong>Message</strong><br />
-  <%=h @message.body %>
+  <strong>Name:</strong>
+  <%= @message.name %>
 </p>
+
 <p>
-  <% if @message.recipient == @user %>
-	  <%= link_to "Reply", new_user_message_path(@user, :reply_to => @message) %> |
-  <% end %>
-  <%= link_to "Inbox", user_messages_path(@user)%>
+  <strong>Email:</strong>
+  <%= @message.email %>
 </p>
+
+<p>
+  <strong>Messages:</strong>
+  <%= @message.messages %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

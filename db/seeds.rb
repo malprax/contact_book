@@ -20,9 +20,9 @@ pages = Page.create([
   {name: 'extracurricular activity', input_text: 'extracurricular activity', slug:'extracurricular_activity', ancestry: '3'},
   {name: 'anti-bullying program', input_text: 'anti-bullying program_page', slug:'anti_bullying_program', ancestry: '3'},
   {name: 'islamic_studies', input_text: 'islamic_studies', slug:'islamic_studies', ancestry: '3'},
-   {name: 'quran', input_text: 'welcome to quran dan doa page', slug:'quran', ancestry: '3/13'},  
-  {name: 'akhlakul karimah', input_text: 'welcome to akhlakul karimah page', slug:'akhlakul_karimah', ancestry: '3/13'},
-  {name: 'sholat dan doa', input_text: 'welcome to sholat dan doa page', slug:'sholat_dan_doa', ancestry: '3/13'}, 
+   {name: 'quran', input_text: 'welcome to quran dan doa page', slug:'quran', ancestry: '3/12'},  
+  {name: 'akhlakul karimah', input_text: 'welcome to akhlakul karimah page', slug:'akhlakul_karimah', ancestry: '3/12'},
+  {name: 'sholat dan doa', input_text: 'welcome to sholat dan doa page', slug:'sholat_dan_doa', ancestry: '3/12'}, 
    
   {name: 'pre-school', input_text: 'welcome to pre-school page', slug:'pre_school', ancestry: '4'},
   {name: 'primary school', input_text: 'welcome to primary_school_page', slug:'primary_school', ancestry: '4'},
