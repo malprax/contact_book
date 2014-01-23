@@ -75,7 +75,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
 gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 #gem 'negative_captcha'
-gem 'strong_parameters'
+#gem 'strong_parameters'
 
 #heroku db:push --confirm 
 
