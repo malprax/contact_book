@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :setup_negative_captcha, :only => [:new, :create]
+  
   before_action :set_message, only: [:show, :edit, :update, :destroy]
 
   # GET /messages
@@ -25,18 +25,19 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
-    @message = Message.new(message_params, @captcha.values)
-    
+    @message = Message.new(message_params)   
 
     respond_to do |format|
-      if @captcha.valid && @message.save
+      if @message.save
         format.html { redirect_to @message, notice: 'Message was successfully created.' }
         format.json { render action: 'show', status: :created, location: @message }
-      else
-        format.html { render action: 'new', notice: @captcha.error if @captcha.error }
+      else 
+        format.html { render action: 'new' }      
         format.json { render json: @message.errors, status: :unprocessable_entity }
       end
     end
+    
+   
   end
 
   # PATCH/PUT /messages/1
@@ -74,14 +75,5 @@ class MessagesController < ApplicationController
       params.require(:message).permit(:name, :email, :messages)
     end
     
-    def setup_negative_captcha
-        @captcha = NegativeCaptcha.new(
-          # A secret key entered in environment.rb. 'rake secret' will give you a good one.
-          secret: '103647d3c4cfafb35d1a45ce8c3f85baebc29094cd6aec0d5d80c3c4579917860ab6698d3d0949ab467af9626e1d08b698a12b92b1c1dedbd598344bb03a54ed',
-          spinner: request.remote_ip, 
-          # Whatever fields are in your form
-          fields: [:name, :email, :messages],  
-          params: params
-        )
-      end
+   
 end
