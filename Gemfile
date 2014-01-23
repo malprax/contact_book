@@ -73,7 +73,9 @@ gem 'puma'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
+gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 #gem 'negative_captcha'
+gem 'strong_parameters'
 
 #heroku db:push --confirm 
 
