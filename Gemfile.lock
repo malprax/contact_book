@@ -6,10 +6,10 @@ GIT
       railties (>= 3.0)
 
 GIT
-  remote: git://github.com/jongilbraith/simple-private-messages.git
-  revision: 7ba7d3c9f7670ef3bddfc90390a49556a94f7013
+  remote: git://github.com/galetahub/simple-captcha.git
+  revision: 2602bf19a63df25929960b5a7721a9d265281ec1
   specs:
-    simple-private-messages (0.0.0)
+    simple_captcha (0.1.6)
 
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
@@ -138,6 +138,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    recaptcha (0.3.6)
     ref (1.0.5)
     sass (3.2.10)
     sass-rails (4.0.0)
@@ -206,9 +207,10 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails-observers
   rails_12factor
+  recaptcha
   sass-rails (~> 4.0.0)
   sdoc
-  simple-private-messages (= 0.0.0)!
+  simple_captcha!
   therubyracer
   turbolinks
   twitter-bootstrap-rails

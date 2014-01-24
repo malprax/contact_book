@@ -1,8 +1,8 @@
 ContactBook::Application.routes.draw do
  
   resources :messages
-  get '/contact_us' => 'messages#new'  
- 
+  get '/contact_us' => 'messages#new'   
+
   resources :images
 
   resources :pages, only: [:index, :new, :create]

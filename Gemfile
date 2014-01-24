@@ -73,7 +73,9 @@ gem 'puma'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
-gem 'simple-private-messages', '0.0.0', :git => 'git://github.com/jongilbraith/simple-private-messages.git'
+#gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
+#gem 'negative_captcha'
+#gem 'strong_parameters'
 
 gem "recaptcha", :require => "recaptcha/rails"
 
