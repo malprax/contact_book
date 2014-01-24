@@ -1,9 +1,8 @@
 ContactBook::Application.routes.draw do
  
   resources :messages
-  get '/contact_us' => 'messages#new'
-  
-  resources :users 
+  get '/contact_us' => 'messages#new'  
+ 
   resources :images
 
   resources :pages, only: [:index, :new, :create]
@@ -48,7 +47,7 @@ ContactBook::Application.routes.draw do
   #post 'contact' => 'contact#create'
   #######################################################################
 
-  devise_for :users, path_names: {sign_in: "sign_in", sign_out: "logout"}
+  devise_for :users, path_names: {sign_in: "sign_in", sign_out: "sign_out"}
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
