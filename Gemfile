@@ -75,5 +75,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
 gem 'simple-private-messages', '0.0.0', :git => 'git://github.com/jongilbraith/simple-private-messages.git'
 
+gem "recaptcha", :require => "recaptcha/rails"
+
 #heroku db:push --confirm 
 
