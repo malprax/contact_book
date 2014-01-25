@@ -6,12 +6,6 @@ GIT
       railties (>= 3.0)
 
 GIT
-  remote: git://github.com/galetahub/simple-captcha.git
-  revision: 2602bf19a63df25929960b5a7721a9d265281ec1
-  specs:
-    simple_captcha (0.1.6)
-
-GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: 6ac2509923ebad5a8c2caf23891d4d1bd99e6cdc
   specs:
@@ -210,7 +204,6 @@ DEPENDENCIES
   recaptcha
   sass-rails (~> 4.0.0)
   sdoc
-  simple_captcha!
   therubyracer
   turbolinks
   twitter-bootstrap-rails
