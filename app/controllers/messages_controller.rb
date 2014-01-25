@@ -27,7 +27,9 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     respond_to do |format|
-      if !verify_recaptcha(:model => @message, :message => "Oh! It's error with reCAPTCHA!") && @message.save
+      
+      if @message.save
+         # !verify_recaptcha(:model => @message, :message => "Oh! It's error with reCAPTCHA!") && 
         format.html { redirect_to @message, notice: 'Message was successfully created.' }
         format.json { render action: 'show', status: :created, location: @message }
       else
