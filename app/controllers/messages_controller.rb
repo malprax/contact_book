@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  include SimpleCaptcha::ControllerHelpers
   before_action :set_message, only: [:show, :edit, :update, :destroy]
 
   # GET /messages
@@ -23,13 +24,21 @@ class MessagesController < ApplicationController
 
   # POST /messages
   # POST /messages.json
-  def create
+  def create   
+    unless simple_captcha_valid?
+      flash[:error] = "Incorrect captcha"
+            redirect_to action: :new and return 
+      
+    end
     @message = Message.new(message_params)
 
     respond_to do |format|
       
       if @message.save
-         # !verify_recaptcha(:model => @message, :message => "Oh! It's error with reCAPTCHA!") && 
+         # untuk mengganti pertanyaan humanizer
+         #@user.change_humanizer_question(params[:user][:humanizer_question_id])
+         ########################################################################
+         # verify_recaptcha(:model => @message, :message => "Oh! It's error with reCAPTCHA!") && 
         format.html { redirect_to @message, notice: 'Message was successfully created.' }
         format.json { render action: 'show', status: :created, location: @message }
       else
@@ -72,6 +81,6 @@ class MessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.require(:message).permit(:name, :email, :messages)
+      params.require(:message).permit(:name, :email, :messages, :humanizer_answer, :humanizer_question_id)
     end
 end

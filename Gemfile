@@ -77,7 +77,8 @@ gem 'dropbox-sdk'
 #gem 'negative_captcha'
 #gem 'strong_parameters'
 
-gem "recaptcha", :require => "recaptcha/rails"
+#gem "recaptcha", :require => "recaptcha/rails"
+gem "humanizer"
 
 #heroku db:push --confirm 
 

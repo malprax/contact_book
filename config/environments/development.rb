@@ -27,8 +27,7 @@ ContactBook::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   
-  #put this in development.rb and in production.rb (separate keys in each so you can test!)
-  RECAPTCHA_PUBLIC_KEY= '6Lf0ge0SAAAAAL5vkOucIOOog9pRFqvcrGtmw8DN'
-  RECAPTCHA_PRIVATE_KEY= '6Lf0ge0SAAAAAGgeyj0y-jeaM3SjW-kxT7x0Cvzz'  
+ 
+ 
  
 end

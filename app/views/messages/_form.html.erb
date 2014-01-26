@@ -25,6 +25,10 @@
   </div>
   <div class="field">
     <%#= recaptcha_tags display: {theme:  'red', tabindex:  5}, ssl: false, noscript: false %>
+    <%#= f.label :humanizer_answer, @message.humanizer_question %>
+    <%#= f.text_field :humanizer_answer %>
+    <%#= f.hidden_field :humanizer_question_id %>
+     <%= show_simple_captcha %>
   </div>
   <div class="actions">
     <%= f.submit %>

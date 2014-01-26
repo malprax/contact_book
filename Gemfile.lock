@@ -76,6 +76,7 @@ GEM
     erubis (2.7.0)
     execjs (2.0.1)
     hike (1.2.3)
+    humanizer (2.6.0)
     i18n (0.6.5)
     jbuilder (1.5.1)
       activesupport (>= 3.0.0)
@@ -132,7 +133,6 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    recaptcha (0.3.6)
     ref (1.0.5)
     sass (3.2.10)
     sass-rails (4.0.0)
@@ -189,6 +189,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   dropbox-sdk
+  humanizer
   jbuilder (~> 1.2)
   jquery-rails
   less-rails
@@ -201,7 +202,6 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails-observers
   rails_12factor
-  recaptcha
   sass-rails (~> 4.0.0)
   sdoc
   therubyracer
