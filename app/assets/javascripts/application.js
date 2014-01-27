@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require twitter/bootstrap
-//= require iconbootstrap
-//= require iconbootstrap.min
+//= require home
+//= require editor
 //= require turbolinks
 //= require bootstrap-wysihtml5
 
