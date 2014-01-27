@@ -132,11 +132,12 @@
                  </li>
                  <li > <%= link_to 'Employment', employments_path %> </li>   
 
-                 <li > <%= link_to 'Contact Us', contact_us_path, "data-no-turbolink" => true %> </li>   
+                 <li > <%#= link_to 'Contact Us', contact_us_path, "data-no-turbolink" => true %> </li>   
 
-                 
+                 </ul>
                   <!-- Akhir menu navigasi -->
-                  <li class="nav pull-right" ><%= link_to Time.now.strftime(' %B %d, %Y'), "#"%></li> 
+                  <ul class="nav pull-right">
+                  <li  ><%= link_to Time.now.strftime(' %B %d, %Y'), "#"%></li> 
                </ul>
             
          

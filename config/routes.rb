@@ -3,7 +3,7 @@ ContactBook::Application.routes.draw do
   resources :employments
 
   resources :messages
-  get '/contact_us' => 'messages#new'   
+  #get '/contact_us' => 'messages#new'   
 
   resources :images
 
