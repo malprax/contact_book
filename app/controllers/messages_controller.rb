@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  include SimpleCaptcha::ControllerHelpers
+  before_action :authenticate_user!, except: [:create, :new, :show]
   before_action :set_message, only: [:show, :edit, :update, :destroy]
 
   # GET /messages
@@ -24,12 +24,7 @@ class MessagesController < ApplicationController
 
   # POST /messages
   # POST /messages.json
-  def create   
-    unless simple_captcha_valid?
-      flash[:error] = "Incorrect captcha"
-            redirect_to action: :new and return 
-      
-    end
+  def create       
     @message = Message.new(message_params)
 
     respond_to do |format|

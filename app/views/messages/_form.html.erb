@@ -1,4 +1,4 @@
-<%= form_for(@message) do |f| %>
+<%= form_for (@message) do |f| %>
   <% if @message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
@@ -23,12 +23,8 @@
     <%= f.label :messages %><br>
     <%= f.text_area :messages %>
   </div>
-  <div class="field">
-    <%#= recaptcha_tags display: {theme:  'red', tabindex:  5}, ssl: false, noscript: false %>
-    <%#= f.label :humanizer_answer, @message.humanizer_question %>
-    <%#= f.text_field :humanizer_answer %>
-    <%#= f.hidden_field :humanizer_question_id %>
-     <%= show_simple_captcha %>
+  <div class="field">    
+     
   </div>
   <div class="actions">
     <%= f.submit %>
