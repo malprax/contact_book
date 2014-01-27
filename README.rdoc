@@ -100,6 +100,28 @@ Intinya sekarang progress website:
 3. Pembelian domain www.runiah-school.com
 
 ###################################################################################################################
+
+27 januari 2013
+
+4. Padukan dengan pelita indonesia.com
+11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
+12. warna warna website berhasil didapat:
+   #373435 -> hitam
+   #A9ABAE -> abu abu
+   #FFD43C -> kuning
+   #FFEA6D -> kuning muda
+   #3B6054 -> hijau
+16. referensi www.al-taqwa.vic.edu.au (direktur al azhar sekarang)
+
+
+
+Intinya sekarang progress website:
+1. Penambahan mail server progress 70% tinggal reply message t email
+2. Perbaikan tampilan desain web
+
+
+###################################################################################################################
+  
   
 
 
