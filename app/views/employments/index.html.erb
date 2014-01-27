@@ -29,5 +29,6 @@
 </table>
 
 <br>
-
+<% if user_signed_in? %>
 <%= link_to 'New Employment', new_employment_path %>
+<% end %>

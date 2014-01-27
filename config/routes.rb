@@ -42,7 +42,7 @@ ContactBook::Application.routes.draw do
   
     
   #employment
-  get '/employment' => 'employments#index'
+   get '/employment' => 'employments#index'
   
   #contact us  
   #get 'contact' => 'contact#new', :as => 'contact'
