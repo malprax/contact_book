@@ -20,3 +20,7 @@ development:
 test:  
   database: contact_book_test 
   <<: *defaults   
+
+test:  
+  database: contact_book_production
+  <<: *defaults   
