@@ -6,6 +6,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require scripts
+//= require jflickrfeed
+//= require jquery.quicksand
+//= require jquery.tweet
+//= require jquery.flexslider
 //= require twitter/bootstrap
 //= require bootstrap-wysihtml5
 //= require_tree .
