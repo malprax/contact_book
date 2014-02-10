@@ -17,7 +17,8 @@ body {
     font-size: 12px;
 }
 
-.violet { color: #9d426b; }
+.violet { color: #3B6054 ; }
+.violet2 { color: #FFD43C ; }
 
 a {
     color: #9d426b;
@@ -172,7 +173,7 @@ strong { font-weight: bold; }
 .what-we-do .service {
     padding-bottom: 23px;
     background: #f8f8f8;
-    border-bottom: 2px solid #9d426b;
+    border-bottom: 2px solid #FFD43C;
 }
 
 .what-we-do .service:hover {
@@ -209,7 +210,7 @@ strong { font-weight: bold; }
 
 .what-we-do .service a {
     padding: 5px 22px;
-    background: #9d426b;
+    background: #3B6054 ;
     color: #fff;
     font-style: italic;
     text-decoration: none;
@@ -266,7 +267,7 @@ strong { font-weight: bold; }
     margin-top: 40px;
     padding-bottom: 20px;
     background: #f8f8f8;
-    border-bottom: 2px solid #9d426b;
+    border-bottom: 2px solid #3B6054;
 }
 
 .portfolio .work:hover img {
