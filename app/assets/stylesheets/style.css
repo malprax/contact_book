@@ -62,7 +62,7 @@ strong { font-weight: bold; }
     width: 280px;
     height: 63px;
     padding: 30px 0;
-    background: url(../img/logo.png) 20px center no-repeat;
+    background: url('/assets/runiahlogo2.png') 20px center no-repeat;
 }
 
 .header ul.nav {
@@ -78,12 +78,12 @@ strong { font-weight: bold; }
 
 .header ul.nav li.current-page a {
     padding-top: 25px;
-    border-top: 5px solid #9d426b;
+    border-top: 5px solid #3B6054;
     background: #f8f8f8;
 }
 
 .header ul.nav li a:hover {
-    background: #9d426b;
+    background: #3B6054;
     color: #fff;
 }
 
@@ -99,7 +99,7 @@ strong { font-weight: bold; }
 
 .slider {
     margin: 0 auto;
-    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    background: #f8f8f8 url('/assets/pattern.jpg') left top repeat;
     -moz-box-shadow:
         0 5px 15px 0 rgba(0,0,0,.05) inset,
         0 -5px 15px 0 rgba(0,0,0,.05) inset;
@@ -250,7 +250,7 @@ strong { font-weight: bold; }
 }
 
 .portfolio-title {
-    background: url(../img/line.png) left center repeat-x;
+    background: url('/assets/images/line.png') left center repeat-x;
 }
 
 .portfolio-title h3 {
@@ -355,7 +355,7 @@ strong { font-weight: bold; }
 }
 
 .testimonials-title {
-    background: url(../img/line.png) left center repeat-x;
+    background: url('/assets/images/line.png') left center repeat-x;
 }
 
 .testimonials-title h3 {
@@ -415,7 +415,7 @@ strong { font-weight: bold; }
 footer {
     margin: 0 auto;
     padding-bottom: 10px;
-    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    background: #f8f8f8 url('/assets/pattern.jpg') left top repeat;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
@@ -512,22 +512,22 @@ footer .social {
 
 footer .social a { display: inline-block; width: 24px; height: 24px; margin: 0 0 0 8px; vertical-align: middle; }
 
-footer .social a.twitter { background: url(../img/social-icons/twitter.png) left bottom no-repeat; }
-footer .social a.dribbble { background: url(../img/social-icons/dribbble.png) left bottom no-repeat; }
-footer .social a.rss { background: url(../img/social-icons/rss.png) left bottom no-repeat; }
-footer .social a.pinterest { background: url(../img/social-icons/pinterest.png) left bottom no-repeat; }
-footer .social a.flickr { background: url(../img/social-icons/flickr.png) left bottom no-repeat; }
-footer .social a.forrst { background: url(../img/social-icons/forrst.png) left bottom no-repeat; }
-footer .social a.vimeo { background: url(../img/social-icons/vimeo.png) left bottom no-repeat; }
-footer .social a.linkedin { background: url(../img/social-icons/linkedin.png) left bottom no-repeat; }
-footer .social a.facebook { background: url(../img/social-icons/facebook.png) left bottom no-repeat; }
-footer .social a.email { background: url(../img/social-icons/email.png) left bottom no-repeat; }
-footer .social a.github { background: url(../img/social-icons/github.png) left bottom no-repeat; }
-footer .social a.behance { background: url(../img/social-icons/behance.png) left bottom no-repeat; }
-footer .social a.googleplus { background: url(../img/social-icons/googleplus.png) left bottom no-repeat; }
-footer .social a.youtube { background: url(../img/social-icons/youtube.png) left bottom no-repeat; }
-footer .social a.skype { background: url(../img/social-icons/skype.png) left bottom no-repeat; }
-footer .social a.tumblr { background: url(../img/social-icons/tumblr.png) left bottom no-repeat; }
+footer .social a.twitter { background: url('/assets/social-icons/twitter.png') left bottom no-repeat; }
+footer .social a.dribbble { background: url('/assets/social-icons/dribbble.png') left bottom no-repeat; }
+footer .social a.rss { background: url('/assets/social-icons/rss.png') left bottom no-repeat; }
+footer .social a.pinterest { background: url('/assets/social-icons/pinterest.png') left bottom no-repeat; }
+footer .social a.flickr { background: url('/assets/social-icons/flickr.png') left bottom no-repeat; }
+footer .social a.forrst { background: url('/assets/social-icons/forrst.png') left bottom no-repeat; }
+footer .social a.vimeo { background: url('/assets/social-icons/vimeo.png') left bottom no-repeat; }
+footer .social a.linkedin { background: url('/assets/social-icons/linkedin.png') left bottom no-repeat; }
+footer .social a.facebook { background: url('/assets/social-icons/facebook.png') left bottom no-repeat; }
+footer .social a.email { background: url('/assets/social-icons/email.png') left bottom no-repeat; }
+footer .social a.github { background: url('/assets/social-icons/github.png') left bottom no-repeat; }
+footer .social a.behance { background: url('/assets/social-icons/behance.png') left bottom no-repeat; }
+footer .social a.googleplus { background: url('/assets/social-icons/googleplus.png') left bottom no-repeat; }
+footer .social a.youtube { background: url('/assets/social-icons/youtube.png') left bottom no-repeat; }
+footer .social a.skype { background: url('/assets/social-icons/skype.png') left bottom no-repeat; }
+footer .social a.tumblr { background: url('/assets/social-icons/tumblr.png') left bottom no-repeat; }
 
 footer .social a:hover { background-position: left top; }
 
@@ -537,7 +537,7 @@ footer .social a:hover { background-position: left top; }
 .page-title {
     margin: 0 auto;
     padding: 30px 0 35px 0;
-    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    background: #f8f8f8 url('/assets/images/pattern.jpg') left top repeat;
     -moz-box-shadow:
         0 5px 15px 0 rgba(0,0,0,.05) inset,
         0 -5px 15px 0 rgba(0,0,0,.05) inset;
@@ -612,7 +612,7 @@ footer .social a:hover { background-position: left top; }
 }
 
 .team-title {
-    background: url(../img/line.png) left center repeat-x;
+    background: url('/assets/images/line.png') left center repeat-x;
 }
 
 .team-title h3 {
@@ -656,20 +656,20 @@ footer .social a:hover { background-position: left top; }
 
 .team-text .social-links a { display: inline-block; width: 24px; height: 24px; margin: 0 4px; vertical-align: middle; }
 
-.team-text .social-links a.twitter { background: url(assets/social-icons/twitter.png) left top no-repeat; }
-.team-text .social-links a.dribbble { background: url(assets/social-icons/dribbble.png) left top no-repeat; }
-.team-text .social-links a.pinterest { background: url(assets/social-icons/pinterest.png) left top no-repeat; }
-.team-text .social-links a.flickr { background: url(assets/social-icons/flickr.png) left top no-repeat; }
-.team-text .social-links a.forrst { background: url(assets/social-icons/forrst.png) left top no-repeat; }
-.team-text .social-links a.vimeo { background: url(assets/social-icons/vimeo.png) left top no-repeat; }
-.team-text .social-links a.linkedin { background: url(assets/social-icons/linkedin.png) left top no-repeat; }
-.team-text .social-links a.facebook { background: url(assets/social-icons/facebook.png) left top no-repeat; }
-.team-text .social-links a.email { background: url(assets/social-icons/email.png) left top no-repeat; }
-.team-text .social-links a.behance { background: url(assets/social-icons/behance.png) left top no-repeat; }
-.team-text .social-links a.googleplus { background: url(assets/social-icons/googleplus.png) left top no-repeat; }
-.team-text .social-links a.youtube { background: url(assets/social-icons/youtube.png) left top no-repeat; }
-.team-text .social-links a.skype { background: url(assets/social-icons/skype.png) left top no-repeat; }
-.team-text .social-links a.tumblr { background: url(assets/social-icons/tumblr.png) left top no-repeat; }
+.team-text .social-links a.twitter { background: url('/assets/images/social-icons/twitter.png') left top no-repeat; }
+.team-text .social-links a.dribbble { background: url('/assets/images/social-icons/dribbble.png') left top no-repeat; }
+.team-text .social-links a.pinterest { background: url('/assets/images/social-icons/pinterest.png') left top no-repeat; }
+.team-text .social-links a.flickr { background: url('/assets/images/social-icons/flickr.png') left top no-repeat; }
+.team-text .social-links a.forrst { background: url('/assets/images/social-icons/forrst.png') left top no-repeat; }
+.team-text .social-links a.vimeo { background: url('/assets/images/social-icons/vimeo.png') left top no-repeat; }
+.team-text .social-links a.linkedin { background: url('/assets/images/social-icons/linkedin.png') left top no-repeat; }
+.team-text .social-links a.facebook { background: url('/assets/images/social-icons/facebook.png') left top no-repeat; }
+.team-text .social-links a.email { background: url('/assets/images/social-icons/email.png') left top no-repeat; }
+.team-text .social-links a.behance { background: url('/assets/images/social-icons/behance.png') left top no-repeat; }
+.team-text .social-links a.googleplus { background: url('/assets/images/social-icons/googleplus.png') left top no-repeat; }
+.team-text .social-links a.youtube { background: url('/assets/images/social-icons/youtube.png') left top no-repeat; }
+.team-text .social-links a.skype { background: url('/assets/images/social-icons/skype.png') left top no-repeat; }
+.team-text .social-links a.tumblr { background: url('/assets/images/social-icons/tumblr.png') left top no-repeat; }
 
 .team-text .social-links a:hover { background-position: left bottom; }
 
