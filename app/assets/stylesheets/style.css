@@ -21,7 +21,7 @@ body {
 .violet2 { color: #FFD43C ; }
 
 a {
-    color: #9d426b;
+    color: #3B6054;
     text-decoration: none;
     -o-transition: all .3s;
     -moz-transition: all .3s;
@@ -298,7 +298,7 @@ strong { font-weight: bold; }
 .portfolio .work .icon-awesome a {
     display: inline-block;
     padding: 5px 9px;
-    background: #9d426b; 
+    background: #3B6054; 
     color: #fff;
     -moz-border-radius: 19px;
     -webkit-border-radius: 19px;
@@ -315,7 +315,7 @@ strong { font-weight: bold; }
 }
 
 .portfolio .work .icon-awesome a:hover {
-    background: #5d5d5d;
+    background: #FFD43C ;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -408,7 +408,7 @@ strong { font-weight: bold; }
 }
 
 .testimonial-list .nav-tabs li a:hover { border: 0; background: #ddd; }
-.testimonial-list .nav-tabs li.active a { background: #9d426b; }
+.testimonial-list .nav-tabs li.active a { background: #FFD43C ; }
 
 
 /* ----- Footer ----- */
