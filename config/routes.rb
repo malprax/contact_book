@@ -44,7 +44,8 @@ ContactBook::Application.routes.draw do
   #employment
    get '/employment' => 'employments#index'
   
-  #contact us  
+  #contact us 
+  get '/contact_us' => 'messages#new' 
   #get 'contact' => 'contact#new', :as => 'contact'
   #post 'contact' => 'contact#create'
   #######################################################################

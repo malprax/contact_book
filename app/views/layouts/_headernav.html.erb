@@ -17,7 +17,7 @@
                                   <%=link_to '<i class="icon-home"></i><br/>Home'.html_safe, root_url%>   
                                 </li>
                                 <li>
-                                    <a href="portfolio.html"><i class="icon-user"></i><br />About</a>
+                                    <a href="portfolio.html"><i class="icon-eye-open"></i><br />About</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="icon-book"></i><br />Campus</a>
@@ -30,10 +30,9 @@
                                 </li>
                                 <li>
                                     <a href="about.html"><i class="icon-user"></i><br />Employee</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html"><i class="icon-envelope-alt"></i><br />Contact</a>
-                                </li>
+                                </li>                               
+                                
+                                 <li > <%= link_to '<i class="icon-envelope-alt"></i><br/>Contact'.html_safe, contact_us_path, "data-no-turbolink" => true %> </li>
                                 <% if user_signed_in? %>
                                 <li>
                                      <%=link_to '<i class="icon-off"></i><br/>Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%>
