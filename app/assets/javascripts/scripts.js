@@ -1,5 +1,3 @@
-/* Dropdown*/
-
 /*
     Slider
 */
