@@ -1,3 +1,8 @@
+// Dropdown 
+jQuery(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+})
+
 /*
     Slider
 */
@@ -86,14 +91,14 @@ $(document).ready(function() {
 /*
     Google maps
 */
-jQuery(document).ready(function() {
-    var position = new google.maps.LatLng(45.067883, 7.687231);
-    $('.map').gmap({'center': position,'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
-            var self = this;
-            self.addMarker({'position': this.get('map').getCenter() });	
-        }
-    }); 
-});
+// jQuery(document).ready(function() {
+//     var position = new google.maps.LatLng(45.067883, 7.687231);
+//     $('.map').gmap({'center': position,'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
+//             var self = this;
+//             self.addMarker({'position': this.get('map').getCenter() });  
+//         }
+//     }); 
+// });
 
 
 /*
