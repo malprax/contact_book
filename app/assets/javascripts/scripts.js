@@ -1,7 +1,4 @@
-// Dropdown 
-jQuery(document).ready(function(){
-  $('.dropdown-toggle').dropdown()
-})
+/* Dropdown*/
 
 /*
     Slider
