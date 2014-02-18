@@ -13,23 +13,85 @@
                         </h1>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
+                                <!-- Home -->
                                 <li class="current-page">
                                   <%=link_to '<i class="icon-home"></i><br/>Home'.html_safe, root_url%>   
+                                </li>      
+                                <!-- -->
+                                
+                                <!-- About -->
+                                <li class="dropdown" >
+                                  <a class="dropdown-toggle"
+                                     data-toggle="dropdown"
+                                     href="#">
+                                      <i class="icon-eye-open"></i><br />About                                      
+                                    </a>
+                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                                    <li><%= link_to 'Our Philosophy', our_philosophy_path %></li>
+                                    <li><%= link_to 'Vision And Mission', vision_and_mission_path %></li>
+                                    <li><%= link_to 'Founder Message', founder_message_path %></li>
+                                    <li><%= link_to 'High-Quality Education', high_quality_education_path %></li>
+                                    <li><%= link_to 'Right And Responsibility', right_and_responsibility_path %></li>                                 
+                                  </ul>
                                 </li>
-                                <li>
-                                    <a href="portfolio.html"><i class="icon-eye-open"></i><br />About</a>
+                                <!--  -->
+                                
+                                <!-- campus -->
+                                <li class="dropdown" >
+                                  <a class="dropdown-toggle"
+                                     data-toggle="dropdown"
+                                     >
+                                     <i class="icon-book"></i><br />Campus                                      
+                                    </a>
+                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                                    <li><%= link_to 'Head Of School Welcome', head_of_school_welcome_path %></li>
+                                    <li><%= link_to 'Facilities', facilities_path %></li>
+                                    <li><%= link_to 'Our Staff', our_staff_path %></li>                               
+                                  </ul>
+                                </li>                               
+                                <!--  -->
+                                
+                                <!-- curriculum -->
+                                <li class="dropdown" >
+                                  <a class="dropdown-toggle"
+                                     data-toggle="dropdown"
+                                     >
+                                     <i class="icon-tasks"></i><br />Curriculum
+                                    
+                                    </a>
+                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                                    <li><%= link_to 'Pre-school', pre_school_path %></li>
+                                    <li><%= link_to 'Primary School', primary_school_path %></li>                                             
+                                  </ul>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="icon-book"></i><br />Campus</a>
+                                <!--  -->
+                                <!-- Programs -->
+                                <li class="dropdown" >
+                                  <a class="dropdown-toggle"
+                                     data-toggle="dropdown"
+                                     href="#"><i class="icon-th-list"></i><br />Programs
+                                   
+                                    </a>
+                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                                    <li><%= link_to 'Language Support', language_support_path %></li>
+                                    <li><%= link_to 'Learning Support For Special Need', learning_support_for_special_need_path %></li>
+                                    <li><%= link_to 'Student Welfare Program', student_welfare_program_path %></li>
+                                    <li><%= link_to 'Excursion / Fieldtrip', excursion_or_fieldtrip_path %></li>
+                                    <li><%= link_to 'Extracurricular Activity', extracurricular_activity_path %></li>
+                                    <li><%= link_to 'Anti Bullying Program', anti_bullying_program_path %></li> 
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Islamic Studies</a>
+                                        <ul class="dropdown-menu">
+                                          <li><%= link_to 'Quran', quran_path %></li>
+                                          <li><%= link_to 'Akhlakul Karimah', akhlakul_karimah_path %></li>
+                                          <li><%= link_to 'Sholat dan Doa', sholat_dan_doa_path %></li>                           
+                                        </ul>
+                                    </li>                   
+                                  </ul>
                                 </li>
+                                <!--  -->
                                 <li>
-                                    <a href="services.html"><i class="icon-tasks"></i><br />Curriculum</a>
-                                </li>
-                                <li>
-                                    <a href="services.html"><i class="icon-th-list"></i><br />Program</a>
-                                </li>
-                                <li>
-                                    <a href="about.html"><i class="icon-user"></i><br />Employee</a>
+                                     <%= link_to '<i class="icon-user"></i><br/>Employee'.html_safe, employments_path %>
                                 </li>                               
                                 
                                  <li > <%= link_to '<i class="icon-envelope-alt"></i><br/>Contact'.html_safe, contact_us_path, "data-no-turbolink" => true %> </li>
@@ -43,6 +105,8 @@
                                 </li>
                                 
                                 <% end %>
+                                
+                                
                                
                                 
                                   <li> <%#= link_to current_user.email, root_url %> </li>
