@@ -278,7 +278,7 @@ background-clip: padding-box;
 }
 
 .portfolio-title {
-    background: url('/assets/images/line.png') left center repeat-x;
+    background: url('/assets/line.png') left center repeat-x;
 }
 
 .portfolio-title h3 {
@@ -383,7 +383,7 @@ background-clip: padding-box;
 }
 
 .testimonials-title {
-    background: url('/assets/images/line.png') left center repeat-x;
+    background: url('/assets/line.png') left center repeat-x;
 }
 
 .testimonials-title h3 {
@@ -640,7 +640,7 @@ footer .social a:hover { background-position: left top; }
 }
 
 .team-title {
-    background: url('/assets/images/line.png') left center repeat-x;
+    background: url('/assets/line.png') left center repeat-x;
 }
 
 .team-title h3 {

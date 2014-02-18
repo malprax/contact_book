@@ -11,7 +11,10 @@ end
 
 group :development do
   gem 'pg'  
+  gem 'quiet_assets'
 end
+
+
 
 
 
