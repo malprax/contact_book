@@ -1,4 +1,13 @@
 /*
+    Javascript
+*/ 
+
+jQuery(document).ready(function(){
+    $('.dropdown-toggle').dropdown()
+})
+
+
+/*
     Slider
 */
 $(window).load(function() {
