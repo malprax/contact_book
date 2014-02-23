@@ -782,7 +782,7 @@ footer .social a:hover { background-position: left top; }
     height: 160px;
 }
 
-.contact-us form button {
+/*.contact-us form button {
     width: 120px;
     height: 30px;
     margin-top: 15px;
@@ -823,7 +823,7 @@ footer .social a:hover { background-position: left top; }
         0 5px 10px 0 rgba(0,0,0,.15) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
 }
-
+*/
 .contact-us form label {
     margin-top: 10px;
     font-size: 13px;
@@ -832,6 +832,10 @@ footer .social a:hover { background-position: left top; }
 .contact-us form input:-moz-placeholder, .contact-us form textarea:-moz-placeholder { color: #ccc; }
 .contact-us form input:-ms-input-placeholder, .contact-us form textarea:-ms-input-placeholder { color: #ccc; }
 .contact-us form input::-webkit-input-placeholder, .contact-us form textarea::-webkit-input-placeholder { color: #ccc; }
+
+<a href="#" class="myButtonContact">green</a>
+
+
 
 /* ----- Google maps ----- */
 
