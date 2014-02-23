@@ -8,10 +8,10 @@
 
 pages = Page.create([ 
   
-  {name: 'programs', input_text: 'welcome to programs', slug:'programs'},
+   {name: 'programs', input_text: 'welcome to programs', slug:'programs'},
   {name: 'curriculum', input_text: 'welcome to curriculum page', slug:'curriculum'},
-  {name: 'our campus', input_text: 'welcome to our campus', slug:'our_campus'},
-  {name: 'about us', input_text: 'welcome to about_uspage', slug:'about'},
+   {name: 'campus', input_text: 'welcome to our campus', slug:'our_campus'},
+   {name: 'about', input_text: 'welcome to about_uspage', slug:'about'},
   {name: 'language support', input_text: 'welcome to language_support page', slug:'language_support', ancestry: '1'},
   {name: 'learning support for special need', input_text: 'welcome to learning support_for_special_need', slug:'learning_support_for_special_need', ancestry: '1'},
   {name: 'student welfare program', input_text: 'student welfare program', slug:'student_welfare_program', ancestry: '1'},

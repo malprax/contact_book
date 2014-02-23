@@ -81,6 +81,7 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
 gem 'honeypot-captcha'
+gem 'friendly_id', '~> 5.0.0'
 #gem 'client_side_validations'
 #gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 #gem 'negative_captcha'

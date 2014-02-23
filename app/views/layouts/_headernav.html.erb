@@ -94,7 +94,7 @@
                                      <%= link_to '<i class="icon-user"></i><br/>Employee'.html_safe, employments_path %>
                                 </li>                               
                                 
-                                 <li > <%= link_to '<i class="icon-envelope-alt"></i><br/>Contact'.html_safe, contact_us_path, "data-no-turbolink" => true %> </li>
+                                 <li > <%= link_to '<i class="icon-envelope-alt"></i><br/>Contact'.html_safe, contact_path, "data-no-turbolink" => true %> </li>
                                 <% if user_signed_in? %>
                                 <li>
                                      <%=link_to '<i class="icon-off"></i><br/>Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%>
