@@ -7,10 +7,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require scripts
-//= require jflickrfeed
 //= require jquery.quicksand
 //= require jquery.tweet
-//= require jquery.flexslider
 //= require jquery-1.8.2.min
 //= require jquery.prettyPhoto
 //= require bootstrap.min
