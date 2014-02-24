@@ -774,7 +774,7 @@ footer .social a:hover { background-position: left top; }
 }
 
 .contact-us form input:focus, .contact-us form textarea:focus {
-    border: 1px solid #bbb;
+    border: 1px solid #3B6054;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;

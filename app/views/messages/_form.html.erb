@@ -31,14 +31,16 @@
                 </div>
               <% end %>
 
-              <div class="field">    
+              <div class="field">
+                <%= f.label :name %><br>    
                 <%= f.text_field :name, placeholder: "Enter your name..." %>
               </div>
               <div class="field">
-   
+                <%= f.label :email %><br>
                 <%= f.text_field :email, placeholder:"Enter your email..." %>
               </div>
-              <div class="field">    
+              <div class="field"> 
+                <%= f.label :messages %><br>   
                 <%= f.text_area :messages, placeholder: "Your message..."%>
               </div>
               
