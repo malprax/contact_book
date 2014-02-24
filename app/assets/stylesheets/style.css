@@ -127,6 +127,7 @@ background-clip: padding-box;
 
 .slider {
     margin: 0 auto;
+    padding-top: 100px;
     background: #FFEA6D left top repeat;
     -moz-box-shadow:
         0 5px 15px 0 rgba(0,0,0,.05) inset,
