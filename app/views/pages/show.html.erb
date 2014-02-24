@@ -59,15 +59,22 @@
     <!-- Content Page Text -->
     <div class="about-us container">
         <div class="row">
-            <div               
-                  <p class="pull-left"><%= @page.input_text %></p>               
-                  <p class="pull-right">
-                    <%#= link_to 'Edit', edit_page_path(@page) %> |
-                    <%#= link_to 'Back', pages_path %>
-                  </p>  
-                      
-                    
-                  
+          
+            <div class="about-us-text span12">
+                  <h4><%= @page.input_text %></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <span class="violet">suscipit lobortis</span> nisl ut aliquip ex ea commodo consequat. Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <strong>eiusmod tempor</strong> incididunt.</p>
+                  <h4>Our Mission</h4>
+                  <p>Lorem ipsum dolor sit amet, <span class="violet">consectetur adipisicing</span> elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, sed do eiusmod <span class="violet">tempor incididunt</span> ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                  <h4>Why Choose Us</h4>
+                  <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis <span class="violet">nostrud exerci</span> tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+       
+            <div>               
+                  <p class="pull-left"><%#= @page.input_text %></p>               
+                  <p class="pull-right"> 
+                    <%= link_to 'Edit', "#" , class: "editlink"%> |
+                    <%= link_to 'Back', "#", class: "editlink" %>
+                  </p>               
             </div>
         </div>
     </div>

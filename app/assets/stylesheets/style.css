@@ -1030,6 +1030,22 @@ ul.portfolio-img li {
 .filter-portfolio a#active-imgs:hover { color: #5d5d5d; }
 
 
+/* ----- Edit And Delete Link ----- */
+.editlink {
+
+    line-height: 40px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0 0 10px;
+    color: #888;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.editlink:hover { color: #3B6054; text-decoration: none; }
 
 
 /* ----- Media queries ----- */
