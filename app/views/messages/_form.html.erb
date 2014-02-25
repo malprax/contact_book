@@ -16,7 +16,7 @@
 <div class="contact-us container">
     <div class="row">
         <div class="contact-form span7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper <a href="">suscipit lobortis</a> nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p>
             
             <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
               <% if @message.errors.any? %>
@@ -58,7 +58,7 @@
             <p><i class="icon-map-marker"></i> Address: gagak street no 25(23), makassar, Indonesia</p>
             <p><i class="icon-phone"></i> Phone: 0411876060</p>
             <p><i class="icon-print"></i> Fax: 0411876073</p>
-            <p><i class="icon-envelope-alt"></i> Email: <a href="">admin@runiah-school.com</a></p>
+            <p><i class="icon-envelope-alt"></i> Email: <span class="violet">admin@runiah-school.com</span></p>
         </div>
     </div>
 </div>
