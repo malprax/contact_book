@@ -1,11 +1,12 @@
 class PagesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:index, :show, :edit, :update, :destroy]
 
   # GET /images
   # GET /images.json
   def index   
     @pages = Page.all
+   
   end
 
   # GET /images/1

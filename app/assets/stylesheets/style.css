@@ -12,7 +12,7 @@
 body {
     
 /*    background: #fff;*/
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     color: #888;
     font-size: 12px;
@@ -196,7 +196,10 @@ background-clip: padding-box;
 /* ----- Presentation ----- */
 
 .presentation {
-    margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;   
+   
        
 }
 

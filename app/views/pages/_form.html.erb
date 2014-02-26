@@ -21,8 +21,8 @@
   </div>
   
   <div class="field">
-    <%= f.label :parent_id, "Di isi untuk memindahkan posisi page pada navigasi yaitu di menu atau submenu" %><br>
-    <%= f.collection_select :parent_id,  Page.order(:name), :id, :name, include_blank: true %>
+    <%= f.label :ancestry, "Di isi untuk memindahkan posisi page pada navigasi yaitu di menu atau submenu" %><br>
+    <%= f.collection_select :ancestry,  Page.order(:name), :id, :name, include_blank: true %>
   </div>
   
   <div class="field">
