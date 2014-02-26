@@ -583,6 +583,22 @@ footer .social a:hover { background-position: left top; }
 
 /* ----- Page title ----- */
 
+.page-title-index {
+    margin: 0 auto;
+    padding: 150px 0 35px 0;
+    background:  #FFEA6D url('/assets/images/pattern.jpg') left top repeat;
+    -moz-box-shadow:
+        0 5px 15px 0 rgba(0,0,0,.05) inset,
+        0 -5px 15px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 5px 15px 0 rgba(0,0,0,.05) inset,
+        0 -5px 15px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 5px 15px 0 rgba(0,0,0,.05) inset,
+        0 -5px 15px 0 rgba(0,0,0,.05) inset;
+    text-align: left;
+}
+
 .page-title {
     margin: 0 auto;
     padding: 150px 0 35px 0;
