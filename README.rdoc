@@ -78,7 +78,7 @@ Please feel free to use a different markup language if you do not plan to run
 14. bagaimana jika halaman yang dibuat selalu diawali dengan huruf besar keluarannya
 
 ################################################################################################################### 
-5 januari 2013
+5 januari 2014
 
 4. Padukan dengan pelita indonesia.com
 5. Estimasi launching januari pekan ke 2
@@ -101,7 +101,7 @@ Intinya sekarang progress website:
 
 ###################################################################################################################
 
-27 januari 2013
+27 januari 2014
 
 4. Padukan dengan pelita indonesia.com
 11. desain lebih diutamakan http://www.templatemo.com/templates/templatemo_381_blactro/#home
@@ -123,21 +123,30 @@ Intinya sekarang progress website:
 ###################################################################################################################
 
 
-Tes Bahasa Inggris	ITP TOEFL	
-CBT TOEFL	
-iBT TOEFL	
-IELTS	
-Tes Potensi Akademik	SAT	
-GRE	
-GMAT	
-OTO-Bappenas
+26 februari 2014
+Job Progrress To End
 
-Ukuran portofolio image
-size  279 Kb
-dimensions 725 × 348
+Home#index
+about us
+tweeter
+background image
+
+Page#show
+edit css
+
+employee#show
+make a news
+
+contact_us
+make google map with geomaprails n geocoder
+
+sign in
+edit css
+###################################################################################################################
 
 
-172x63
+
+
 
   
   
