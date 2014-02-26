@@ -56,6 +56,7 @@ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 /* ----- Navbar ----- */
 .header .navbar {
     margin-bottom: 0;
+    border-bottom: 2px solid #FFD43C;
 }
 
 .header .navbar-inner {
@@ -196,7 +197,8 @@ background-clip: padding-box;
 /* ----- Presentation ----- */
 
 .presentation {
-    margin-top: 130px;    
+    margin-top: 130px;
+       
 }
 
 .presentation h2 {
