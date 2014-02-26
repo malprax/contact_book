@@ -15,7 +15,7 @@
 <!-- Contact Us -->
 <div class="contact-us container">
     <div class="row">
-        <div class="contact-form span7">
+        <div class="span7">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p>
             
             <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
@@ -44,8 +44,8 @@
                 <%= f.text_area :messages, placeholder: "Your message..."%>
               </div>
               
-              <div class="actions">
-                <%= f.submit "Contact Us", class: "ButtonContact"%>
+              <div class="btn btn-success">
+                <%= f.submit "Contact Us"%>
               </div>
             <% end %>
             

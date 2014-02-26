@@ -816,11 +816,7 @@ footer .social a:hover { background-position: left top; }
 
 .contact-us form input, .contact-us form textarea {
     width: 90%;
-    height: 24px;
-    border: 1px solid #ddd;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    height: 24px;   
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -841,7 +837,7 @@ footer .social a:hover { background-position: left top; }
     height: 160px;
 }
 
-/*.contact-us form button {
+button {
     width: 120px;
     height: 30px;
     margin-top: 15px;
@@ -865,13 +861,13 @@ footer .social a:hover { background-position: left top; }
     -ms-transition: all .3s;
 }
 
-.contact-us form button:hover {
+button:hover {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.contact-us form button:active {
+button:active {
     -moz-box-shadow:
         0 5px 10px 0 rgba(0,0,0,.15) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
@@ -882,7 +878,7 @@ footer .social a:hover { background-position: left top; }
         0 5px 10px 0 rgba(0,0,0,.15) inset,
         0 -1px 25px 0 rgba(0,0,0,.05) inset;
 }
-*/
+
 .contact-us form label {
     margin-top: 10px;
     font-size: 13px;

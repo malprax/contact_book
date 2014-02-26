@@ -81,12 +81,14 @@
                   <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis <span class="violet">nostrud exerci</span> tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
               </div>
        
-            <div>               
+            <div>  
+                  <% if signed_in? %>             
                   <p class="pull-left"><%#= @page.input_text %></p>               
                   <p class="pull-right"> 
-                    <%= link_to 'Edit', "#" , class: "editlink"%> |
+                    <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> |
                     <%= link_to 'Back', "#", class: "editlink" %>
-                  </p>               
+                  </p>  
+                  <% end %>             
             </div>
         </div>
     </div>
