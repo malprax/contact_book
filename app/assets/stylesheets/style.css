@@ -603,7 +603,7 @@ footer .social a:hover { background-position: left top; }
 
 .page-title {
     margin: 0 auto;
-    padding: 150px 0 35px 0;
+    padding: 30px 0 35px 0;
     background:  #FFEA6D url('/assets/images/pattern.jpg') left top repeat;
     -moz-box-shadow:
         0 5px 15px 0 rgba(0,0,0,.05) inset,
@@ -615,6 +615,7 @@ footer .social a:hover { background-position: left top; }
         0 5px 15px 0 rgba(0,0,0,.05) inset,
         0 -5px 15px 0 rgba(0,0,0,.05) inset;
     text-align: left;
+    border-top: 2px solid #FFD43C;
 }
 
 .hidden-desktop{    
