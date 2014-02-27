@@ -13,53 +13,64 @@
 </div>
 
 <!-- Contact Us -->
-<div class="contact-us container">
-    <div class="row">
-        <div class="span7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p>
+
+<div class="container">				
+        <div class="row">
+          <div class="span7">
+            <p class="contacttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p>
             
-            <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
-              <% if @message.errors.any? %>
-                <div id="error_explanation">
-                  <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+            <div id="wrappercontact ">
+                <div id="login" class="animate form">
+                  
+                  <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
+                    <% if @message.errors.any? %>
+                      <div id="error_explanation">
+                        <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
 
-                  <ul>
-                  <% @message.errors.full_messages.each do |msg| %>
-                    <li><%= msg %></li>
-                  <% end %>
-                  </ul>
-                </div>
-              <% end %>
+                        <ul>
+                        <% @message.errors.full_messages.each do |msg| %>
+                          <li><%= msg %></li>
+                        <% end %>
+                        </ul>
+                      </div>
+                    <% end %>
 
-              <div class="field">
-                <%= f.label :name %><br>    
-                <%= f.text_field :name, placeholder: "Enter your name..." %>
-              </div>
-              <div class="field">
-                <%= f.label :email %><br>
-                <%= f.text_field :email, placeholder:"Enter your email..." %>
-              </div>
-              <div class="field"> 
-                <%= f.label :messages %><br>   
-                <%= f.text_area :messages, placeholder: "Your message..."%>
-              </div>
+                    <div class="field">
+                      <%= f.label :name %><br>    
+                      <%= f.text_field :name, placeholder: "Enter your name..." %>
+                    </div>
+                    <div class="field">
+                      <%= f.label :email %><br>
+                      <%= f.text_field :email, placeholder:"Enter your email..." %>
+                    </div>
+                    <div class="field"> 
+                      <%= f.label :messages %><br>   
+                      <%= f.text_area :messages, placeholder: "Your message..."%>
+                    </div>
               
-              <div class="btn btn-success">
-                <%= f.submit "Contact Us"%>
-              </div>
-            <% end %>
-            
-
-        </div>
-        <div class="contact-address span5">
-            <h4>We Are Here</h4>
-            <div class="map"></div>
-            <h4>Address</h4>            
-            <p><i class="icon-map-marker"></i> Address: gagak street no 25(23), makassar, Indonesia</p>
-            <p><i class="icon-phone"></i> Phone: 0411876060</p>
-            <p><i class="icon-print"></i> Fax: 0411876073</p>
-            <p><i class="icon-envelope-alt"></i> Email: <span class="violet">admin@runiah-school.com</span></p>
-        </div>
-    </div>
+                    <!-- <div class="btn btn-success">
+                      <%#= f.submit "Contact Us"%>
+                    </div> -->              
+                    <p class="login button"> 
+                        <input type="submit" value="Contact Us" />
+                    </p>
+              
+                  <% end %>
+                </div>
+            </div> 
+           
+          </div> 
+          <div class="contact-us contact-address span5">
+              <h4>We Are Here</h4>
+              <div class="map"></div>
+              <h4>Address</h4>            
+              <p><i class="icon-map-marker"></i> Address: gagak street no 25(23), makassar, Indonesia</p>
+              <p><i class="icon-phone"></i> Phone: 0411876060</p>
+              <p><i class="icon-print"></i> Fax: 0411876073</p>
+              <p><i class="icon-envelope-alt"></i> Email: <span class="violet">admin@runiah-school.com</span></p>
+          </div>         
+        </div> 
 </div>
+
+
 

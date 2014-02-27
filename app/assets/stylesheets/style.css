@@ -783,7 +783,7 @@ footer .social a:hover { background-position: left top; }
 /* ----- Form ----- */
 
 .contact-us {
-    margin-top: 20px;
+    margin-top: 0px;
     padding-bottom: 50px;
     text-align: left;
 }
