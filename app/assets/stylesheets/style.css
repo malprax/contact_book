@@ -16,6 +16,7 @@ body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     color: #888;
     font-size: 12px;
+    
 }
 
 .violet { color: #3B6054 ; }
@@ -56,7 +57,7 @@ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 /* ----- Navbar ----- */
 .header .navbar {
     margin-bottom: 0;
-    border-bottom: 2px solid #FFD43C;
+   
 }
 
 .header .navbar-inner {
@@ -198,7 +199,8 @@ background-clip: padding-box;
 .presentation {
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align: center;   
+  text-align: center;
+/*  background: url('/assets/dummy/layouthomepage.jpg') ;   */
    
        
 }
