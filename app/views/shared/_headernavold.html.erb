@@ -96,26 +96,9 @@
                                 
                                  <li > <%= link_to '<i class="icon-envelope-alt"></i><br/>Contact'.html_safe, contact_path, "data-no-turbolink" => true %> </li>
                                 <% if user_signed_in? %>
-                                
-                                  
-                                <!-- About -->
-                                <li class="dropdown" >
-                                  <a class="dropdown-toggle"
-                                     data-toggle="dropdown"
-                                     href="#">
-                                      <i class="icon-user"></i><br /><span class="caret"></span>                                    
-                                    </a>
-                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
-                                    <li> <%= link_to 'Mailbox', messages_path%> </li> 
-                                    <li> <%= link_to 'Page', pages_path %> </li> 
-                                    <li> <%= link_to 'Image', images_path %> </li> 
-                                    <li> <%=link_to 'Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%></li>                             
-                                  </ul>
+                                <li>
+                                     <%=link_to '<i class="icon-off"></i><br/>Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%>
                                 </li>
-                                <!--  -->
-                                     
-                                    
-                               
                                 <% else %>
                                 <li>
                                      <%=link_to '<i class="icon-off"></i><br/>Sign In'.html_safe,  new_user_session_path,  title: "Sign In", data: {tooltip: true}%>
