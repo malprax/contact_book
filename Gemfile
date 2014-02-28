@@ -62,9 +62,8 @@ end
 #user_authentication
 gem 'devise'
 
-
+#twitter_bootstrap
 gem "therubyracer", platforms: :ruby
-
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
@@ -99,13 +98,12 @@ gem 'honeypot-captcha'
 # location, maps, route
 gem 'gmaps4rails', ">=2.0"
 gem "geocoder"
+
+
 #gem 'client_side_validations'
 #gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 #gem 'negative_captcha'
 #gem 'strong_parameters'
-
 #gem "recaptcha", :require => "recaptcha/rails"
-
-
 #heroku db:push --confirm 
 
