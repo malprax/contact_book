@@ -16,8 +16,6 @@ group :development do
   gem 'quiet_assets'  
 end
 
-
-
 group :assets do
   # Use SCSS for stylesheets
   gem 'sass-rails', '~> 4.0.0'
@@ -34,10 +32,6 @@ group :assets do
   #gem 'therubyracer', platforms: :ruby
   
 end
-
-
-
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -64,6 +58,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#user_authentication
 gem 'devise'
 
 
@@ -71,6 +67,8 @@ gem "therubyracer", platforms: :ruby
 
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+
+#upgrade from rails3
 gem 'protected_attributes'
 gem 'rails-observers'
 gem 'actionpack-page_caching'
@@ -79,16 +77,28 @@ gem 'activerecord-deprecated_finders'
 gem 'builder'
 gem 'minitest'
 gem 'tzinfo'
+
+#editor
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
+
+#user_authority
 gem 'cancan'
-gem 'ancestry'
+
+#localserver
 gem 'puma'
+
+#cloudfolder
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem 'dropbox-sdk'
+
+#securityform
 gem 'honeypot-captcha'
-gem 'friendly_id', '~> 5.0.0'
+
+# location, maps, route
+gem 'gmaps4rails', ">=2.0"
+gem "geocoder"
 #gem 'client_side_validations'
 #gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 #gem 'negative_captcha'

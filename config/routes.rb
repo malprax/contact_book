@@ -1,5 +1,7 @@
 ContactBook::Application.routes.draw do
  
+  resources :locations
+
   resources :pages
 
   resources :employments
