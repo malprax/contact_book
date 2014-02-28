@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20140228132048) do
     t.datetime "updated_at"
   end
 
+  add_index "pages", ["parent_id"], name: "index_pages_on_parent_id", using: :btree
+
   create_table "simple_captcha_data", force: true do |t|
     t.string   "key",        limit: 40
     t.string   "value",      limit: 6
