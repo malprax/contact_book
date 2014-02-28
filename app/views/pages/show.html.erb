@@ -1,0 +1,92 @@
+<%# content_for :title, @page.name %>
+
+<!-- container -->
+    <!-- <div class="row">
+     
+      <div class="span3">
+        <div class="well sidebar-nav">          
+          <ul class="nav nav-list">
+            <li class="nav-header"><h5>Sidebar</h5></li> -->
+            <!-- <li><%#= render 'submenu_pages', pages:  @page.root.descendants.arrange %></li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+        <!--/.well -->
+      <!-- </div> -->
+      <!--/span-->
+     
+      
+      <!-- <div class="span9"> -->
+        <!-- <%= bootstrap_flash %> -->
+        <!-- <div class="breadcrumb"> -->
+          <!-- <%# @page.ancestors.each do |page| %>
+            <%#= link_to page.name, page %> &gt;
+          <%# end %> -->
+        <!-- </div> -->
+
+        <!-- <h3> 
+          <% string = @page.name %>
+          <%= string.capitalize %>
+        </h3>
+        <p> -->  
+          <!-- <%= @page.input_text %>
+        </p> -->
+        <%# if user_signed_in? %>
+          <%# if can? :update, page_path %>
+            <%#= link_to 'Edit', edit_page_path(@page) %> 
+            <%#= link_to 'Back', pages_path %>
+          <%# end %>
+        <%# end %>        
+      <!-- </div>
+      
+    </div> -->
+    <!--/row-->
+<!-- /container -->
+    
+
+    <!-- Page Title -->
+    <div class="page-title visible-desktop">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- <i class="icon-user page-title-icon"></i> -->
+                    <h2><%= @page.name %></h2>
+                    <!-- <p>Below you can find more information about our company</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     
+    
+    <div class="page-title hidden-desktop">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- <i class="icon-user page-title-icon"></i> -->
+                    <h2><%= @page.name %></h2>
+                    
+                    <!-- <p>Below you can find more information about our company</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Page Text -->
+    <div class="about-us container">
+        <div class="row">
+          
+            <div class="about-us-text span12">                  
+                  <p><%= @page.input_text %></p>
+            </div>               
+       
+            <div>  
+                  <% if signed_in? %>             
+                  <p class="pull-left"><%#= @page.input_text %></p>               
+                  <p class="pull-right"> 
+                    <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> |
+                    <%= link_to 'Index', pages_path, class: "editlink" %>
+                  </p>  
+                  <% end %>             
+            </div>
+        </div>
+    </div>

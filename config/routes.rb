@@ -1,5 +1,7 @@
 ContactBook::Application.routes.draw do
  
+  resources :pages
+
   resources :employments
   resources :messages
   #get '/contact_us' => 'messages#new'  
