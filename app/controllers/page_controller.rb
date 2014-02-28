@@ -12,9 +12,9 @@ class PagesController < ApplicationController
   # GET /images/1
   # GET /images/1.json
   def show
-    if request.path != article_path(@page)
-        redirect_to @page, status: :moved_permanently
-    end
+    # if request.path != article_path(@page)
+#         redirect_to @page, status: :moved_permanently
+#     end
   end
 
   # GET /images/new
