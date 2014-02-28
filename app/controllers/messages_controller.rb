@@ -11,6 +11,8 @@ class MessagesController < ApplicationController
   # GET /messages/1
   # GET /messages/1.json
   def show
+    @locations = Location.all
+    @location = Location.find(params[:id])
   end
 
   # GET /messages/new
