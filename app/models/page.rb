@@ -1,12 +1,16 @@
 class Page < ActiveRecord::Base
-  attr_accessible :name, :input_text, :slug, :parent_id, :ancestry
+  attr_accessible :name, :input_text, :slug, :ancestry
   #validates :slug, uniqueness: true, presence: true, exclusion: {in: %w[signup login]}
   #before_validation :generate_slug
   #has_ancestry
   attr_writer :current_page
   
-  # extend FriendlyId
-#   friendly_id :name, use: :slugged
+   extend FriendlyId
+   friendly_id :name, use: [:slugged, :history]
+   
+   def should_generate_new_friendly_id?
+     new_record?     
+   end
   
   
  # def to_param
