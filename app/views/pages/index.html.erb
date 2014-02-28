@@ -21,7 +21,7 @@
         <td><%= page.id %></td>
         <td><%= link_to page.name, page, class:"editlink" %></td>        
         <td><%= page.slug %></td>
-         <td><%#= page.parent_id %></td>        
+        <td><%= page.parent_id %></td>        
         <td><%= link_to 'Edit', edit_page_path(page), class: "editlink"  %></td>
         <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } , class: "editlink"  %></td>
       </tr>
