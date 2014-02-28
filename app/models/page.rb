@@ -23,7 +23,6 @@ class Page < ActiveRecord::Base
   
  # def find_page
  #    @page = Page.find_by_slug(params[:id].split('/').last)
- # end  
-  
+ # end    
  
 end
