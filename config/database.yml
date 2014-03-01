@@ -21,6 +21,6 @@ test:
   database: contact_book_test 
   <<: *defaults   
 
-production:  
-  database: contact_book_production
-  <<: *defaults   
+# production:  
+#   database: contact_book_production
+#   <<: *defaults   
