@@ -3,5 +3,9 @@ class HomeController < ApplicationController
     @message = Message.new 
   end
   
+  def homesample
+    
+  end
+  
  
 end

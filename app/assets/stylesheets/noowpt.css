@@ -1,0 +1,42 @@
+.intro h1{
+  color: rgba(0,0,0,0.7);
+  font-size: 48px;
+}
+.intro h2{
+  color: rgba(0,0,0,0.7);
+  font-size: 36px;
+}
+
+
+.aligncenter{
+  text-align: center; 
+  font-family:'Oxygen', Helvetica, sans-serif;
+  text-rendering: optimizelegibility;
+  line-height: 1.25;
+}
+
+.lead {
+  font-weight: 400;
+  font-size:15px;
+  color: rgba(0,0,0,0.5);
+  margin:0px;
+}
+
+
+.slider-holder {
+position: relative;
+z-index: 5;
+}
+
+.slider-holder span.slider-b {
+background: url(images/slider-bottom.png) no-repeat 0 0;
+width: 990px;
+height: 30px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+z-index: 100;
+margin: 0;
+padding: 0;
+outline: 0;
+}
