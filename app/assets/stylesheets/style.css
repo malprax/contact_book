@@ -469,11 +469,11 @@ background-clip: padding-box;
 footer {
     margin: 0 auto;
     padding-bottom: 10px;
-    background: #3B6054 left top repeat;
+    background: #ffffff left top repeat;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
-    color: #FDFDFD;
+    color: rgba(0, 0, 0, 0.48);
 }
 
 footer .widget {
