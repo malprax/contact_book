@@ -1,33 +1,4 @@
 == README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-
 21 Desember 2013
 1. Penambahan Gambar gambar
 2. Desain layout disesuaikan sendiri dulu nanti dikoreksi user
@@ -143,6 +114,18 @@ make google map with geomaprails n geocoder
 sign in
 edit css
 ###################################################################################################################
+
+2 maret 2014
+Job progress to end
+background Home#index css
+heroku pg:pull
+riset webmail
+tweeter
+facebook
+
+page#edit css
+###################################################################################################################
+
 
 
 

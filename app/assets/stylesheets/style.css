@@ -556,8 +556,9 @@ footer .footer-border {
     border-top: 1px dashed #ddd;
 }
 
-footer .copyright {
-    margin-top: 15px;
+footer .copyright {  
+
+    margin-top: -65px;
     text-align: left;
 }
 
