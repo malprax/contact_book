@@ -466,10 +466,10 @@ background-clip: padding-box;
 
 /* ----- Footer ----- */
 
-footer {
-    margin: 0 auto;
-    padding-bottom: 10px;
-    background: #ffffff left top repeat;
+footer {  
+    margin: 0 auto;    
+    border-top: 20px solid #FFD43C;
+    background: #3B6054  left top repeat;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
@@ -477,7 +477,7 @@ footer {
 }
 
 footer .widget {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: left;
     
 }
@@ -486,18 +486,57 @@ footer .widget h4 {
     margin-top: 20px;
     font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#FDFDFD;;
+    color:#FDFDFD;
     text-transform: uppercase;
     text-shadow: 0 0px 0 rgba(255,255,255,.7);
 }
 
 footer .widget p {
     line-height: 24px;
+    color:#FDFDFD;
 }
 
 footer .widget i {
     padding-right: 7px;
 }
+
+/*footer .footer-border {
+    margin-top: 30px;
+    border-top: 1px dashed #ddd;
+}*/
+
+footer .copyright {  
+
+    margin-top: -65px;
+    text-align: left;
+    color:#FDFDFD;
+}
+
+footer .social {
+    margin-top: 10px;
+    text-align: right;
+}
+
+footer .social a { display: inline-block; width: 24px; height: 24px; margin: 0 0 0 8px; vertical-align: middle; }
+
+footer .social a.twitter { background: url('/assets/social-icons/twitter.png') left bottom no-repeat; }
+footer .social a.dribbble { background: url('/assets/social-icons/dribbble.png') left bottom no-repeat; }
+footer .social a.rss { background: url('/assets/social-icons/rss.png') left bottom no-repeat; }
+footer .social a.pinterest { background: url('/assets/social-icons/pinterest.png') left bottom no-repeat; }
+footer .social a.flickr { background: url('/assets/social-icons/flickr.png') left bottom no-repeat; }
+footer .social a.forrst { background: url('/assets/social-icons/forrst.png') left bottom no-repeat; }
+footer .social a.vimeo { background: url('/assets/social-icons/vimeo.png') left bottom no-repeat; }
+footer .social a.linkedin { background: url('/assets/social-icons/linkedin.png') left bottom no-repeat; }
+footer .social a.facebook { background: url('/assets/social-icons/facebook.png') left bottom no-repeat; }
+footer .social a.email { background: url('/assets/social-icons/email.png') left bottom no-repeat; }
+footer .social a.github { background: url('/assets/social-icons/github.png') left bottom no-repeat; }
+footer .social a.behance { background: url('/assets/social-icons/behance.png') left bottom no-repeat; }
+footer .social a.googleplus { background: url('/assets/social-icons/googleplus.png') left bottom no-repeat; }
+footer .social a.youtube { background: url('/assets/social-icons/youtube.png') left bottom no-repeat; }
+footer .social a.skype { background: url('/assets/social-icons/skype.png') left bottom no-repeat; }
+footer .social a.tumblr { background: url('/assets/social-icons/tumblr.png') left bottom no-repeat; }
+
+footer .social a:hover { background-position: left top; }
 
 /* Twitter feed */
 .show-tweets {
@@ -549,45 +588,6 @@ footer .widget i {
 .flickr-feed a:hover {
     opacity: 0.7;
 }
-
-
-footer .footer-border {
-    margin-top: 30px;
-    border-top: 1px dashed #ddd;
-}
-
-footer .copyright {  
-
-    margin-top: -65px;
-    text-align: left;
-}
-
-footer .social {
-    margin-top: 10px;
-    text-align: right;
-}
-
-footer .social a { display: inline-block; width: 24px; height: 24px; margin: 0 0 0 8px; vertical-align: middle; }
-
-footer .social a.twitter { background: url('/assets/social-icons/twitter.png') left bottom no-repeat; }
-footer .social a.dribbble { background: url('/assets/social-icons/dribbble.png') left bottom no-repeat; }
-footer .social a.rss { background: url('/assets/social-icons/rss.png') left bottom no-repeat; }
-footer .social a.pinterest { background: url('/assets/social-icons/pinterest.png') left bottom no-repeat; }
-footer .social a.flickr { background: url('/assets/social-icons/flickr.png') left bottom no-repeat; }
-footer .social a.forrst { background: url('/assets/social-icons/forrst.png') left bottom no-repeat; }
-footer .social a.vimeo { background: url('/assets/social-icons/vimeo.png') left bottom no-repeat; }
-footer .social a.linkedin { background: url('/assets/social-icons/linkedin.png') left bottom no-repeat; }
-footer .social a.facebook { background: url('/assets/social-icons/facebook.png') left bottom no-repeat; }
-footer .social a.email { background: url('/assets/social-icons/email.png') left bottom no-repeat; }
-footer .social a.github { background: url('/assets/social-icons/github.png') left bottom no-repeat; }
-footer .social a.behance { background: url('/assets/social-icons/behance.png') left bottom no-repeat; }
-footer .social a.googleplus { background: url('/assets/social-icons/googleplus.png') left bottom no-repeat; }
-footer .social a.youtube { background: url('/assets/social-icons/youtube.png') left bottom no-repeat; }
-footer .social a.skype { background: url('/assets/social-icons/skype.png') left bottom no-repeat; }
-footer .social a.tumblr { background: url('/assets/social-icons/tumblr.png') left bottom no-repeat; }
-
-footer .social a:hover { background-position: left top; }
-
 
 /* ----- Page title ----- */
 
