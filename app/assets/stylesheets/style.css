@@ -467,9 +467,8 @@ background-clip: padding-box;
 /* ----- Footer ----- */
 
 footer {  
-    margin: 0 auto;    
-    border-top: 20px solid #FFD43C;
-    background: #3B6054  left top repeat;
+    margin: 0 auto;  
+    background: #ffffff  left top repeat;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
@@ -485,31 +484,29 @@ footer .widget {
 footer .widget h4 {
     margin-top: 20px;
     font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#FDFDFD;
+    font-size: 14px;  
     text-transform: uppercase;
     text-shadow: 0 0px 0 rgba(255,255,255,.7);
 }
 
 footer .widget p {
-    line-height: 24px;
-    color:#FDFDFD;
+    line-height: 24px;    
 }
 
 footer .widget i {
     padding-right: 7px;
 }
 
-/*footer .footer-border {
-    margin-top: 30px;
+footer .footer-border {
+    
     border-top: 1px dashed #ddd;
-}*/
+}
 
 footer .copyright {  
 
-    margin-top: -40px;
+    margin-top: -65px;
     text-align: left;
-    color:#FDFDFD;
+  
 }
 
 footer .social {
