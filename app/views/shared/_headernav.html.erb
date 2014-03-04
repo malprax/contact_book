@@ -108,7 +108,9 @@
                                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
                                     <li> <%= link_to 'Mailbox', messages_path%> </li> 
                                     <li> <%= link_to 'Page', pages_path %> </li> 
-                                    <li> <%= link_to 'Image', images_path %> </li> 
+                                    <li> <%= link_to 'Image', images_path %> </li>
+                                    <li> <%= link_to "Webmail", "http://webmail.runiah-school.com" %>  </li> 
+                                    <li> <%= link_to "Cpanel", "http://euly.dnsbit.net/cpanel" %></li>
                                     <li> <%=link_to 'Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%></li>                             
                                   </ul>
                                 </li>

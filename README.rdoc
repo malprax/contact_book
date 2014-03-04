@@ -125,6 +125,19 @@ facebook
 
 page#edit css
 ###################################################################################################################
+4 maret 2014
+Job progress to end
+background Home#index css
+heroku pg:pull --> diganti dengan pg:backups
+riset webmail
+tweeter
+facebook
+
+page#edit css 
+sembunyikan webmail dan cpanel login
+perbaiki upload gambar
+
+
 
 
 

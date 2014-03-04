@@ -88,9 +88,10 @@ gem 'cancan'
 gem 'puma'
 
 #cloudfolder
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-gem "paperclip-dropbox", ">= 1.1.7"
-gem 'dropbox-sdk'
+# gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip-dropbox" 
+gem 'cocaine'
+# gem 'dropbox-sdk'
 
 #securityform
 gem 'honeypot-captcha'
