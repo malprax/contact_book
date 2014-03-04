@@ -3,7 +3,9 @@ class Image < ActiveRecord::Base
  attr_accessor :title, :picture
  validates :title, presence: true
   
-  has_attached_file :picture, # :default_url => "/images/:style/missing.png"
+  has_attached_file :picture, 
+  :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+  :url => "/system/:attachment/:id/:style/:filename",# :default_url => "/images/:style/missing.png"
  ######## Ini upload yang disimpan di public assets########################### 
   # :url => "/assets/images/:id/:style/:basename.:extension",
 #   :path => ":rails_root/public/assets/images/:id/:style/:basename.:extension",

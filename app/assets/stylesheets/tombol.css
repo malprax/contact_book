@@ -44,9 +44,8 @@ a.hiddenanchor{
 #wrappercontact{
 	width: 60%;
 	right: 0px;
-  min-height: 320px;  
-	margin: auto;	
-	width: 480px;
+  min-height: 320px; 	
+/*  width: 380px;*/
 	position: relative;	
 }
 /**** Styling the form elements **/
@@ -187,7 +186,7 @@ input {
 	        transition: all 0.2s linear;
 }
 #wrappercontact input:not([type="checkbox"]){
-	width: 92%;
+/*  width: 92%;*/
 	margin-top: 4px;
 	padding: 10px 5px 10px 32px;	
 	border: 1px solid rgb(178, 178, 178);
