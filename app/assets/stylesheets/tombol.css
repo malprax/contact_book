@@ -307,7 +307,7 @@ input {
 }
 p.login.button,
 p.signin.button{
-	text-align: right;
+	text-align: left;
 	margin: 5px 0;
 }
 
@@ -530,6 +530,13 @@ line-height: 20px;
 text-align: left;
 vertical-align: middle;
 border-top: 1px solid #dddddd;
+}
+
+/*checkbox sign in*/
+input[type="checkbox"] {
+margin: 25px 0 0 -100px;
+margin-top: 1px \9;
+line-height: normal;
 }
 
 
