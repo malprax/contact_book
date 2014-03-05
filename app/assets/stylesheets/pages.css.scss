@@ -24,3 +24,111 @@
 //  }
 //}
 
+//tulisan +newpage
+a{
+  margin: 10px 0 0 20px;
+  color: #3B6054;
+}
+
+//tulisan judul
+h3{
+  margin: 10px 0 0 10px;
+}
+
+//tulisan judul halaman page
+.editlink{
+  line-height: 40px;
+  font-size: 13px;
+  padding: 0 0px;
+  margin: 0 0 10px;
+  color: #888;
+  text-decoration: none;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+}
+
+//wysihtml5
+ul.wysihtml5-toolbar {
+margin: 0 0 0 -20px;
+padding: 0;
+display: block;
+}
+
+//form
+form {
+margin: 0 20px 20px;
+}
+
+h1{
+margin: 20px 20px;
+font-family: inherit;
+font-weight: bold;
+line-height: 20px;
+color: inherit;
+text-rendering: optimizelegibility;
+}
+
+//textarea
+//textarea{
+//margin-left: 0;
+//height: 90px;
+//width: 295px;
+//padding: 10px 5px 10px 32px;
+//}
+
+// iframe.wysihtml-sandbox{
+//  height:512px;
+//  width:334px;
+//}
+
+.wysihtml5{
+background-color: rgb(255, 255, 255);
+border-collapse: separate;
+border: 0.9090908765792847px solid rgb(204, 204, 204);
+clear: none;
+display: inline-block;
+float: none;
+margin: 0px 0px 10px;
+outline: rgb(85, 85, 85) none 0px;
+outline-offset: 0px;
+padding: 10px 5px 10px 10px;
+position: static;
+top: auto;
+left: auto;
+right: auto;
+bottom: auto;
+z-index: auto;
+vertical-align: middle;
+text-align: start;
+box-sizing: content-box;
+-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 0.9090908765792847px 0.9090908765792847px 0px inset;
+box-shadow: rgba(0, 0, 0, 0.0745098) 0px 0.9090908765792847px 0.9090908765792847px 0px inset;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-top-left-radius: 4px;
+width: 620px;
+height: 150px;
+}
+
+label {
+display: inline-block;
+margin: 20px 0 0 -10px;
+float:left;
+padding:0 10px;
+}
+
+#page_name{
+margin-left:150px;
+}
+#page_slug{
+  
+} 
+#page_parent_id{
+  margin-left:150px;
+}
+
+
+
