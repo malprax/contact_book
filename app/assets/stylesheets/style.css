@@ -77,6 +77,21 @@ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
     text-align: left;
 }
 
+
+h1 {
+margin: 20px 20px;
+font-family: inherit;
+font-weight: bold;
+line-height: 50px;
+text-rendering: optimizelegibility;
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    text-align: left;
+}
+
 .header a {    
     margin: 10px 0 0 10px;    
 }
