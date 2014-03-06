@@ -487,16 +487,19 @@ background-clip: padding-box;
 
 footer {  
     margin: 0 auto;  
-    background: #ffffff  left top repeat;
+    background: #3B6054  left top repeat;
+    border-top: 5px #FFD43C solid;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
-    color: rgba(0, 0, 0, 0.48);
+    color: #ffffff;
 }
 
 footer .widget {
     margin-top: 10px;
+    margin-left:10px;
     text-align: left;
+    position:relative;
     
 }
 
@@ -516,6 +519,13 @@ footer .widget i {
     padding-right: 7px;
 }
 
+/*motto*/
+.motto{
+ bottom: 0;
+ position:absolute;
+}
+
+
 footer .footer-border {
     
     border-top: 1px dashed #ddd;
@@ -523,7 +533,7 @@ footer .footer-border {
 
 footer .copyright {  
 
-    margin-top: -35px;
+    margin-top: 10px;
     text-align: left;
   
 }
