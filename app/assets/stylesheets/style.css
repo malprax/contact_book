@@ -216,7 +216,7 @@ background-clip: padding-box;
 /* ----- Presentation ----- */
 
 .presentation {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   text-align: center;
 /*  background: url('/assets/dummy/layouthomepage.jpg') ;   */
@@ -520,10 +520,10 @@ footer .widget i {
 }
 
 /*motto*/
-.motto{
+/*.motto{
  bottom: 0;
  position:absolute;
-}
+}*/
 
 
 footer .footer-border {
