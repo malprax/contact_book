@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307143056) do
+ActiveRecord::Schema.define(version: 20140228213529) do
 
   create_table "employments", force: true do |t|
     t.string   "title"
@@ -65,8 +65,10 @@ ActiveRecord::Schema.define(version: 20140307143056) do
   add_index "simple_captcha_data", ["key"], name: "idx_key", using: :btree
 
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "",      null: false
+    t.string   "email"
     t.string   "encrypted_password",     default: "",      null: false
+    t.string   "username"
+    t.string   "role",                   default: "staff", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -77,11 +79,9 @@ ActiveRecord::Schema.define(version: 20140307143056) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "username"
-    t.string   "role",                   default: "staff", null: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

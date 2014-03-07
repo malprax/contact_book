@@ -7,20 +7,20 @@ class User < ActiveRecord::Base
   attr_accessible :password, :password_confirmation, :remember_me, :username, :role
   
   
-  def role_list
-    %w{Admin Staff Teacher}    
-  end
-  
-  def teacher?
-    self._type == "Teacher"
-  end
+  # def role_list
+  #   %w{Admin Staff Teacher}    
+  # end
+  # 
+  # def teacher?
+  #   self == "Teacher"
+  # end
+  # 
+  # def staff?
+  #   self== "Staff"
+  # end
 
-  def staff?
-    self._type == "Staff"
-  end
-
-  def admin?
-    self._type == "Admin"
-  end
+  # def admin?
+ #    self == "Admin"
+ #  end
   
 end

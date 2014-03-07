@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  load_and_authorize_resource
   before_action :authenticate_user!, except: [:show]
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 

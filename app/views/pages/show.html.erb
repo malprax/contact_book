@@ -83,8 +83,11 @@
                   <% if signed_in? %>             
                   <p class="pull-left"><%#= @page.input_text %></p>               
                   <p class="pull-right"> 
-                    <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> |
+                    <% if can? :update, @page %>
+                    <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> | 
+                    <% end %> <% if can? :manage, @pages %>
                     <%= link_to 'Index', pages_path, class: "editlink" %>
+                    <% end %>
                   </p>  
                   <% end %>             
             </div>
