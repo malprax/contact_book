@@ -6,10 +6,11 @@
                         <div id="login" class="animate form">                            
                               <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
                                 <%= devise_error_messages! %>
-                                <%= f.hidden_field :role, value: "Staff" %>
+                                <%= f.hidden_field :role, value: "Staff" %>                               
+                                
                                 <p> 
                                   <%= f.label :username %><br />
-                                  <%= f.email_field :username, :autofocus => true, placeholder: "your username...." %>
+                                  <%= f.text_field :username, placeholder: "your username...." %> 
                                 </p>
                                 <p> 
                                   <%= f.label :password %><br />

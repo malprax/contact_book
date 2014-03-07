@@ -20,5 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  # activerecord:
+#     models:
+#       order:  "User"
+#       
+#     attributes:
+#       order:
+#         email: "Username"
   hello: "Hello world"
  
