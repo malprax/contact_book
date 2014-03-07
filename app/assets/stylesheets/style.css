@@ -493,14 +493,13 @@ footer {
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     color: #ffffff;
+    
 }
 
 footer .widget {
     margin-top: 10px;
     margin-left:10px;
     text-align: left;
-    position:relative;
-    float:right;
     
 }
 
@@ -521,22 +520,19 @@ footer .widget i {
 }
 
 /*motto*/
-#motto{
- bottom: 0;
- position:absolute;
+footer .motto{
+ bottom:0px; 
+ text-align: center;
 }
 
 
-footer .footer-border {
-    
+footer .footer-border {    
     border-top: 1px dashed #ddd;
 }
 
-footer .copyright {  
-
+footer .copyright { 
     margin-top: 10px;
-    text-align: left;
-  
+    text-align: left;  
 }
 /*footer email*/
 #email{
