@@ -100,6 +100,12 @@ gem 'honeypot-captcha'
 gem 'gmaps4rails', ">=2.0"
 gem "geocoder"
 
+# upload file
+gem "carrierwave"
+gem "fog"
+gem "mini_magick"
+gem "rmagick"
+
 
 #gem 'client_side_validations'
 #gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
@@ -107,4 +113,10 @@ gem "geocoder"
 #gem 'strong_parameters'
 #gem "recaptcha", :require => "recaptcha/rails"
 #heroku db:push --confirm 
+
+# upload file
+gem "carrierwave"
+gem "fog"
+gem "mini_magick"
+gem "rmagick"
 

@@ -1,11 +1,10 @@
-
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = 'e810a501925cdd4c33033dc8ce42d51b4f2190e7b301e13a481e927478f915d426305489dce3fcd5910a0b6c40e17b2d59a60962e9d6929f9cf589d52bac2545'
+  config.secret_key = 'adf2cb42db18cda93314d76cd5653011c467e49aa4cbc042af4b959fe053d7d435b97c48456dc9badba91fe94d8468a6432f57547f1b17b60fdc7155e6145260'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -42,12 +41,12 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = [ :email ]
+  config.case_insensitive_keys = [ :username ]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
-  config.strip_whitespace_keys = [ :email ]
+  config.strip_whitespace_keys = [ :username ]
 
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
@@ -99,7 +98,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '79b68642adc52ef7d522671fbb5571638eaf0b4bc13c603cc06ce732157332e67412f6218163ce64d78cb7844d11de141ddf840078266be0670be87a15bd249e'
+  # config.pepper = '45f81f524c1dbb69d1dc0782d28988335f11f2c2fb4baf23857faa782370cbdf1bbbae7159f997faadb43dac7d101111c98c99f01c0136ac0e45ff3d54dc2c0f'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without

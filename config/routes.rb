@@ -51,8 +51,10 @@ ContactBook::Application.routes.draw do
   #get 'contact' => 'contact#new', :as => 'contact'
   #post 'contact' => 'contact#create'
   #######################################################################
-
-  devise_for :users, path_names: {sign_in: "sign_in", sign_out: "sign_out"}
+  
+  # devise_for :views
+  devise_for :users, path: '', path_names: {sign_in: "sign_in", sign_out: "sign_out", sign_up:"sign_up"}
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
