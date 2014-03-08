@@ -18,6 +18,7 @@ class MessagesController < ApplicationController
 
   # GET /messages/new
   def new
+    @page = Page.find_by_id(25)
     @message = Message.new
   end
 
@@ -27,7 +28,7 @@ class MessagesController < ApplicationController
 
   # POST /messages
   # POST /messages.json
-  def create       
+  def create     
     @message = Message.new(message_params)
 
     respond_to do |format|

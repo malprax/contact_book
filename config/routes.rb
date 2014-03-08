@@ -45,6 +45,7 @@ ContactBook::Application.routes.draw do
   
   #contact us 
   get "/contact" => "messages#new"
+  get '/contactmessage' => 'pages#show', :defaults => { :id => '25' }
   #get '/riska_new' => 'messages#new'
   #match "/helpcenter" => "forums#index", :via => :get, :as => :forums
   #match "/contact" => "messages#new", :via => :get, :as => :contact
