@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   
   attr_accessible :password, :password_confirmation, :remember_me, :username, :role
   validates_presence_of :username, :password, :role
-  
+  validates_confirmation_of :password  
   
   # def role_list
   #   %w{Admin Staff Teacher}    
