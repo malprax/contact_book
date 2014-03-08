@@ -3,8 +3,9 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable, :registerable, , :validatable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
-         
+  
   attr_accessible :password, :password_confirmation, :remember_me, :username, :role
+  validates_presence_of :username, :password, :role
   
   
   # def role_list
@@ -22,5 +23,7 @@ class User < ActiveRecord::Base
   # def admin?
  #    self == "Admin"
  #  end
+ 
+
   
 end
