@@ -1,5 +1,9 @@
 ContactBook::Application.routes.draw do
  
+  resources :paintings
+
+  resources :galleries
+
   resources :locations
 
   resources :pages

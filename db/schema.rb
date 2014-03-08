@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228213529) do
+ActiveRecord::Schema.define(version: 20140308050929) do
 
   create_table "employments", force: true do |t|
     t.string   "title"
     t.text     "info"
     t.string   "image"
     t.string   "writer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "galleries", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,6 +60,14 @@ ActiveRecord::Schema.define(version: 20140228213529) do
   end
 
   add_index "pages", ["parent_id"], name: "index_pages_on_parent_id", using: :btree
+
+  create_table "paintings", force: true do |t|
+    t.string   "name"
+    t.integer  "gallery_id"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "simple_captcha_data", force: true do |t|
     t.string   "key",        limit: 40
