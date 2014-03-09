@@ -102,7 +102,7 @@ gem "geocoder"
 
 # upload file
 gem "carrierwave"
-# gem "fog"
+gem "fog"
 gem "mini_magick"
 gem "rmagick"
 
