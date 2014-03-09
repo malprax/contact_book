@@ -15,7 +15,7 @@
     <% Image.all.each do |p| %>
       <tr>
         <td><%= p.title %></td>
-        <td><%= image_tag p.picture %></td>
+        <td><%= image_tag p.picture_url(:thumb).to_s %></td>
         <td><%= link_to 'Show', p %></td>
         <td><%= link_to 'Edit', edit_image_path(p) %></td>
         <td><%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' } %></td>
