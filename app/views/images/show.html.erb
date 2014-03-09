@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 
  <h1>
-   <%= @image.title %>  
-   <%= image_tag @image.picture.url %>
- </h1>
- 
-
+   <%= @image.title %>
+ </h1> 
+  <p>
+    <strong>Picture:</strong>
+    <%= image_tag @image.picture_url(:thumb).to_s %>
+  </p>
 
 
 

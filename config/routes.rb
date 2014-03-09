@@ -1,12 +1,10 @@
 ContactBook::Application.routes.draw do
  
-  resources :paintings
-
-  resources :galleries
+  resources :galleries 
 
   resources :locations
 
-  resources :pages
+  
 
   resources :employments
   resources :messages

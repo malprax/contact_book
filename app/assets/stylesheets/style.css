@@ -486,13 +486,14 @@ background-clip: padding-box;
 /* ----- Footer ----- */
 
 footer {  
-    margin: 15px auto;  
+    margin: 0px auto;  
     background: #3B6054  left top repeat;
     border-top: 5px #FFD43C solid;
     -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.05) inset;
     color: #ffffff;
+    position:relative;
     
 }
 

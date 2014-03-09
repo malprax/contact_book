@@ -1,3 +1,4 @@
 class Gallery < ActiveRecord::Base
-  has_many :paintings
+  attr_accessible :name
+ 
 end

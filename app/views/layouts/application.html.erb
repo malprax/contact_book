@@ -4,17 +4,17 @@
     <%= render 'shared/head_tag' %>
   </head>
   <body>
-    <!-- Header -->
-    <%= render 'shared/headernav' %>  
-   <!-- body  -->
-   <%= bootstrap_flash %>
-    <%= yield %> 
-    <!-- Footer -->
-    <%= render 'shared/footer' %>  
+    <div class="wrapper">
+       <!-- Header -->
+       <%= render 'shared/headernav' %>  
+      <!-- body  -->
+      <%= bootstrap_flash %>
+       <%= yield %> 
+       <!-- Footer -->
+       <%= render 'shared/footer' %>  
     
-    <!-- Javascript --> 
-  
-    
-         
+       <!-- Javascript --> 
+      
+    </div>      
   </body>
 </html>

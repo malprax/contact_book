@@ -89,8 +89,8 @@ gem 'puma'
 
 #cloudfolder
 # gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-gem "paperclip-dropbox" 
-gem 'cocaine'
+# gem "paperclip-dropbox" 
+# gem 'cocaine'
 # gem 'dropbox-sdk'
 
 #securityform
@@ -102,7 +102,7 @@ gem "geocoder"
 
 # upload file
 gem "carrierwave"
-gem "fog"
+# gem "fog"
 gem "mini_magick"
 gem "rmagick"
 
@@ -113,10 +113,4 @@ gem "rmagick"
 #gem 'strong_parameters'
 #gem "recaptcha", :require => "recaptcha/rails"
 #heroku db:push --confirm 
-
-# upload file
-gem "carrierwave"
-gem "fog"
-gem "mini_magick"
-gem "rmagick"
 
