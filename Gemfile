@@ -104,7 +104,8 @@ gem "geocoder"
 gem "carrierwave"
 gem "fog"
 gem "mini_magick"
-gem "rmagick"
+gem "rmagick"     
+gem 'unf' 
 
 
 #gem 'client_side_validations'
