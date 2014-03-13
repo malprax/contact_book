@@ -3,8 +3,8 @@ CarrierWave.configure do |config|
   #config.storage = :file if Rails.env == "test"
   config.fog_credentials = {
     :provider               => 'AWS',       # required
-    :aws_access_key_id      => 'AKIAJGL6LTZUXZ64BMLA',       # required
-    :aws_secret_access_key  => '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',       # required
+    :aws_access_key_id      => '',       # required
+    :aws_secret_access_key  => '',       # required
     :region                 => 'ap-southeast-1'  # optional, defaults to 'us-east-1'
   }
   #config.fog_directory  = 'noowpt-prod'  if Rails.env == "production"                   # required
