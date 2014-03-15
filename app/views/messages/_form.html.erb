@@ -18,7 +18,7 @@
         <div class="row">
           <div class="span6">
             <!-- <p class="contacttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p> -->
-            <p><%= @page.input_text %>
+            <p><%= raw @page.input_text %>
             <% if can? :update, @page %>
                     <%= link_to '<i class="icon-edit"></i> Edit'.html_safe, edit_page_path(@page) , class: "editlink"%> 
                <% end %>

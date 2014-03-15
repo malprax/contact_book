@@ -33,10 +33,15 @@ pages = Page.create([
   {name: 'founder message', input_text: 'founder_message page', slug:'founder_message', parent_id: '4'},
   {name: 'high quality education', input_text: 'welcome to high quality education page', slug:'high_quality_education', parent_id: '4'},
   {name: 'right and responsibility', input_text: 'welcome to right and responsibility', slug:'right_and_responsibility', parent_id: '4'},
+  {name: 'contactmessage', input_text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.', slug:'contactmessage', parent_id: '4'}
  
   ])
 
   users= User.create([
-    {email: "kingmalprax@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl"},
-    {email: "abubay12@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl"}
+    {email: "kingmalprax@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl", username:'aulia', role:'admin'},
+    {email: "abubay12@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl", username:'idris'},
+    {username:'muh.idris', password:"gagak11", password_confirmation:"asdfghjkl",role:'admin'},
+    {username:'anhar.anugrah', password:"gagak12", password_confirmation:"asdfghjkl",role:'admin'},
+    {username:'rini.ramli', password:"gagak13", password_confirmation:"asdfghjkl",role:'admin'},
+    {username:'nurmiah.nasir', password:"gagak14", password_confirmation:"asdfghjkl",role:'admin'}
     ])
