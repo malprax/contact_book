@@ -35,6 +35,6 @@ module ContactBook
     # config.i18n.default_locale = :de
     config.filter_parameters += [:password]
     config.active_record.whitelist_attributes = true
-    
+    config.i18n.enforce_available_locales = false
   end
 end

@@ -39,9 +39,9 @@ pages = Page.create([
 
   users= User.create([
     {email: "kingmalprax@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl", username:'aulia', role:'admin'},
-    {email: "abubay12@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl", username:'idris'},
-    {username:'muh.idris', password:"gagak11", password_confirmation:"asdfghjkl",role:'admin'},
-    {username:'anhar.anugrah', password:"gagak12", password_confirmation:"asdfghjkl",role:'admin'},
-    {username:'rini.ramli', password:"gagak13", password_confirmation:"asdfghjkl",role:'admin'},
-    {username:'nurmiah.nasir', password:"gagak14", password_confirmation:"asdfghjkl",role:'admin'}
+    {email: "abubay12@gmail.com", password:"asdfghjkl", password_confirmation:"asdfghjkl", username:'idris', role:'admin'},
+    {username:'muh.idris', password:"gagak11", password_confirmation:"gagak11",role:'admin'},
+    {username:'anhar.anugrah', password:"gagak12", password_confirmation:"gagak12",role:'admin'},
+    {username:'rini.ramli', password:"gagak13", password_confirmation:"gagak13",role:'admin'},
+    {username:'nurmiah.nasir', password:"gagak14", password_confirmation:"gagak14",role:'admin'}
     ])
