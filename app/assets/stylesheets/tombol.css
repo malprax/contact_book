@@ -544,5 +544,17 @@ p{
   margin:10px 0 0;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+display: inline;
+width: auto;
+height: auto;
+line-height: normal;
+vertical-align: baseline;
+background-image: none;
+background-position: 0% 0%;
+background-repeat: repeat;
+margin-top: -5px;
+}
+
 
 
