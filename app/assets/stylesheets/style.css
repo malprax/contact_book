@@ -538,7 +538,7 @@ background-clip: padding-box;
 .footer .copyright { 
     margin-top: 10px;
     text-align: left; 
-    margin-left:60px; 
+    margin-left:80px; 
 }
 /*footer email*/
 #email{
@@ -713,6 +713,7 @@ background-clip: padding-box;
 .about-us-text {
     padding: 10px 0;
     text-align: left;
+    height:270px;
 }
 
 .about-us-text h4 {
@@ -728,7 +729,7 @@ background-clip: padding-box;
 .about-us-text p {
     padding: 0 20px;
     line-height: 28px;
-    font-size: 13px;
+    font-size: 13px;    
 }
 
 /* ----- Meet our team ----- */
