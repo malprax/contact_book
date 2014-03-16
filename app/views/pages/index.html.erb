@@ -1,35 +1,38 @@
 <% content_for :title, "index" %>
-<h3>Listing pages</h3>
+<div >
+  <h3>Listing pages</h3>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>ID</h>
-      <th>Nama</th>     
-      <th>Url Link</th>
-      <th>Parent</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pages.each do |page| %>
+  <table class="table">
+    <thead>
       <tr>
-        <% nama = page.name %>
-        <td><%= page.id %></td>
-        <td><%= link_to page.name, page, class:"editlink" %></td>        
-        <td><%= page.slug %></td>
-        <td><%= page.parent_id %></td>        
-        <td><%= link_to 'Edit', edit_page_path(page), class: "editlink"  %></td>
-        <td><%= link_to 'Delete', page, method: :delete, data: { confirm: 'Are you sure?' } , class: "editlink"  %></td>
+        <th>ID</h>
+        <th>Nama</th>     
+        <th>Url Link</th>
+        <th>Parent</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @pages.each do |page| %>
+        <tr>
+          <% nama = page.name %>
+          <td><%= page.id %></td>
+          <td><%= link_to page.name, page, class:"editlink" %></td>        
+          <td><%= page.slug %></td>
+          <td><%= page.parent_id %></td>        
+          <td><%= link_to 'Edit', edit_page_path(page), class: "editlink"  %></td>
+          <td><%= link_to 'Delete', page, method: :delete, data: { confirm: 'Are you sure?' } , class: "editlink"  %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
 
-<br>
+  <br>
 
-<%= link_to '<i class="icon-plus"></i> New Page'.html_safe, new_page_path %>
+  <%= link_to '<i class="icon-plus"></i> New Page'.html_safe, new_page_path %>
+</div>
+
