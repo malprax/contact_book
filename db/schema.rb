@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140308050549) do
 
   create_table "images", force: true do |t|
     t.string   "title"
+    t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
