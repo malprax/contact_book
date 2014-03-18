@@ -1,7 +1,5 @@
 ContactBook::Application.routes.draw do
  
-  resources :newstudents
-
   resources :galleries 
 
   resources :locations

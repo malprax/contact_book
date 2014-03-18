@@ -1,2 +1,0 @@
-module NewstudentsHelper
-end

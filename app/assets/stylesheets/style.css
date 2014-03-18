@@ -216,8 +216,8 @@ background-clip: padding-box;
 /* ----- Presentation ----- */
 
 .presentation {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 40px;
   text-align: center;
   height:375px;  
        
