@@ -1,6 +1,7 @@
 .intro h1{
-  color: rgba(0,0,0,0.7);
+  color: rgba(0,0,0,1);
   font-size: 48px;
+  font-family: trebuchet MS;
 }
 .intro h2{
   color: rgba(0,0,0,0.7);
@@ -9,21 +10,24 @@
 
 
 
-.aligncenter{
-  text-align: center; 
-  font-family:'Oxygen', Helvetica, sans-serif;
-  text-rendering: optimizelegibility;
-  line-height: 1.25;
-  
-  
-}
+
 
 .lead {
   font-weight: 400;
-  font-size:15px;
-  color: rgba(0,0,0,0.5);
+  font-size:10px;
+  color: rgba(0,0,0,1);
   margin:0px;
+  text-align:left;
 }
+
+#lead2 {
+  font-weight: 400;
+  font-size:18px;
+  color: rgba(0,0,0,1);
+  margin:0px;
+  text-align:left;
+}
+
 
 
 .slider-holder {
@@ -42,4 +46,28 @@ z-index: 100;
 margin: 0;
 padding: 0;
 outline: 0;
+}
+
+img{
+  
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  position: absolute;
+  bottom: 103px;
+  left: 1020px;
+  -ms-interpolation-mode: bicubic;
+ 
+}
+
+
+.child{
+  background-image: url('/assets/children_web.png');  
+  overflow: hidden;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-size: contain;
 }
