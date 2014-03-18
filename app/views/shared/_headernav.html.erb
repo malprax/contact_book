@@ -113,8 +113,10 @@
                                     <li> <%= link_to 'Image', images_path %> </li>
                                     <li> <%= link_to "Cpanel", "http://euly.dnsbit.net/cpanel" %></li>
                                     <% end %>
-                                    <li> <%= link_to "Webmail", "http://webmail.runiah-school.com" %>  </li>               
-                                    <li> <%=link_to 'Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%></li>                             
+                                    <li> <%= link_to "Webmail", "http://webmail.runiah-school.com" %>  </li> 
+                                                  
+                                    <li> <%=link_to 'Sign Out'.html_safe,  destroy_user_session_path, method: :delete, title: "Sign Out", data: {tooltip: true}%></li> 
+                                                              
                                   </ul>
                                 </li>
                                 <!--  -->
@@ -122,9 +124,9 @@
                                     
                                
                                 <% else %>
-                                <li>
+                                <!-- <li>
                                      <%=link_to 'Sign In'.html_safe,  new_user_session_path,  title: "Sign In", data: {tooltip: true}%>
-                                </li>
+                                </li> -->
                                 
                                 <% end %>
                                 

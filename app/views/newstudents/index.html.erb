@@ -1,0 +1,37 @@
+<h1>Listing newstudents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth</th>
+      <th>Street</th>
+      <th>Religion</th>
+      <th>Contact person</th>
+      <th>Gender</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @newstudents.each do |newstudent| %>
+      <tr>
+        <td><%= newstudent.name %></td>
+        <td><%= newstudent.birth %></td>
+        <td><%= newstudent.street %></td>
+        <td><%= newstudent.religion %></td>
+        <td><%= newstudent.contact_person %></td>
+        <td><%= newstudent.gender %></td>
+        <td><%= link_to 'Show', newstudent %></td>
+        <td><%= link_to 'Edit', edit_newstudent_path(newstudent) %></td>
+        <td><%= link_to 'Destroy', newstudent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Newstudent', new_newstudent_path %>

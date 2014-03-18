@@ -78,8 +78,10 @@ gem 'minitest'
 gem 'tzinfo'
 
 #editor
+
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
-                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
+                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
+#gem 'ckeditor_rails'
 
 #user_authority
 gem 'cancan'
