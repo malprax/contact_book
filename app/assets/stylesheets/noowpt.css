@@ -57,12 +57,9 @@ img{
   border: 0;
   position: fixed;
   float:right;
-  bottom: 100px;
-  margin-right:10px;
-  /*left: 1020px;*/
+  bottom: 100px;  
   -ms-interpolation-mode: bicubic;
-  background-image: url('/assets/children_web.png');  
-  
+  background-image: url('/assets/children_web.png');    
   background-position: 100%;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
