@@ -1,32 +1,37 @@
 <% content_for :title, "Sign In" %>
-         
-            <section>		                        
-                    <div id="wrapper">
-                                   
-                              <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-                                <%= devise_error_messages! %>
-                                <p> 
-                                  <%= f.label :username %><br />
-                                  <%= f.text_field :username, :autofocus => true, placeholder: "your username...." %>
-                                </p>
-                                <p> 
-                                  <%= f.label :password %><br />
-                                  <%= f.password_field :password, placeholder: "your password...." %> 
-                                </p>                                
-                                <p class="keeplogin">
-                                  <% if devise_mapping.rememberable? -%>
-                                    <%= f.check_box :remember_me%> <%= f.label :remember_me %>
-                                  <% end -%>                                     
-                                </p>  
-                                                         
-                                <p class="login button"> 
-                                  <input type="submit" value="Login" />
-                                </p>	
-                                
-                                			
-                              <% end %>
-                                         
-                    </div>                
-            </section>
+
+ <div class="container">
+   <div class="row">
+                   
+     <div id="wrapper">
+                    
+               <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+                 <%= devise_error_messages! %>
+                 <p> 
+                   <%= f.label :username %><br />
+                   <%= f.text_field :username, :autofocus => true, placeholder: "your username...." %>
+                 </p>
+                 <p> 
+                   <%= f.label :password %><br />
+                   <%= f.password_field :password, placeholder: "your password...." %> 
+                 </p>                                
+                 <p class="keeplogin">
+                   <% if devise_mapping.rememberable? -%>
+                     <%= f.check_box :remember_me%> <%= f.label :remember_me %>
+                   <% end -%>                                     
+                 </p>  
+                                          
+                 <p class="login button"> 
+                   <input type="submit" value="Login" />
+                 </p>	
+                 
+                 			
+               <% end %>
+                          
+     </div>                
+     
+   </div>
+ </div>        
+        
  
   

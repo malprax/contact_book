@@ -1,3 +1,6 @@
+
+
+
 <!-- Page Title -->
 
 <div class="page-title">
@@ -14,73 +17,83 @@
 
 <!-- Contact Us -->
 
-<div class="container">				
-        <div class="row">
-          <div class="span6">
-            <!-- <p class="contacttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper<span class="violet">suscipit lobortis</span>nisl ut aliquip ex ea commodo consequat.</p> -->
-            <p><%= raw @page.input_text %>
-            <% if can? :update, @page %>
-                    <%= link_to '<i class="icon-edit"></i> Edit'.html_safe, edit_page_path(@page) , class: "editlink"%> 
-               <% end %>
-            </p>
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      <p><%= raw @page.input_text %>
+      <% if can? :update, @page %>
+              <%= link_to '<i class="icon-edit"></i> Edit'.html_safe, edit_page_path(@page) , class: "editlink"%> 
+         <% end %>
+      </p>
+      
+      
+      <div id="wrappercontact">
+          <div id="login" class="animate form">
             
-            
-            <div id="wrappercontact">
-                <div id="login" class="animate form">
-                  
-                  <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
-                    <% if @message.errors.any? %>
-                      <div id="error_explanation">
-                        <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+            <%= form_for (@message), :html => { :honeypot => true }  do |f| %>
+              <% if @message.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
 
-                        <ul>
-                        <% @message.errors.full_messages.each do |msg| %>
-                          <li><%= msg %></li>
-                        <% end %>
-                        </ul>
-                      </div>
-                    <% end %>
-
-                    <div class="field">
-                      <%= f.label :name %><br>    
-                      <%= f.text_field :name, class: "input-xlarge", placeholder: "Enter your name..." %>
-                    </div>
-                    <div class="field">
-                      <%= f.label :email %><br>
-                      <%= f.text_field :email, class: "input-xlarge", placeholder:"Enter your email..." %>
-                    </div>
-                    <div class="field"> 
-                      <%= f.label :messages %><br>   
-                      <%= f.text_area :messages, placeholder: "Your message..."%>
-                    </div>
-              
-                    <!-- <div class="btn btn-success">
-                      <%#= f.submit "Contact Us"%>
-                    </div> -->              
-                    <p class="login button"> 
-                        <input type="submit" value="Contact Us" />
-                    </p>
-              
+                  <ul>
+                  <% @message.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
                   <% end %>
+                  </ul>
                 </div>
-            </div> 
+              <% end %>
+
+              <div class="field">
+                <%= f.label :name %><br>    
+                <%= f.text_field :name, class: "input-xlarge", placeholder: "Enter your name..." %>
+              </div>
+              <div class="field">
+                <%= f.label :email %><br>
+                <%= f.text_field :email, class: "input-xlarge", placeholder:"Enter your email..." %>
+              </div>
+              <div class="field"> 
+                <%= f.label :messages %><br>   
+                <%= f.text_area :messages, placeholder: "Your message..."%>
+              </div>
+        
+              <!-- <div class="btn btn-success">
+                <%#= f.submit "Contact Us"%>
+              </div> -->              
+              <p class="login button"> 
+                  <input type="submit" value="Contact Us" />
+              </p>
+        
+            <% end %>
+          </div>
+      </div>
+    </div>
+    <div class="contact-us contact-address span6">
+      <h4>We Are Here</h4>
+     
+          <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=-5.158914%2C119.4107655", id: "map" %>
+      
+      <div class="field">
+        <h4>Contact Us</h4>
+        <p><i class="icon-map-marker"></i> Address: gagak street no 25(23), Makassar</p>
+        <p><i class="icon-phone"></i> Phone: 0411876060</p>
+        <p><i class="icon-print"></i> Fax: 0411876073</p>
+        <p><i class="icon-envelope-alt"></i> Email: <span class="violet">admin@runiah-school.com</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">        
+        <div class="row">
+          <div class="span6">           
+           
                    
           </div> 
           <div class="contact-us contact-address span6">
-              <h4>We Are Here</h4>
-              <div class="map">
-                  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=-5.158914%2C119.4107655" %>
-              </div> 
-              <div class="field">
-                <h4>Contact Us</h4>
-                <p><i class="icon-map-marker"></i> Address: gagak street no 25(23), Makassar</p>
-                <p><i class="icon-phone"></i> Phone: 0411876060</p>
-                <p><i class="icon-print"></i> Fax: 0411876073</p>
-                <p><i class="icon-envelope-alt"></i> Email: <span class="violet">admin@runiah-school.com</span></p>
-              </div>             
+              
           </div>         
         </div> 
-</div>
+</div> -->
 
 
 
