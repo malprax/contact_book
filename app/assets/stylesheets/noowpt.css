@@ -52,15 +52,17 @@ img{
   
   max-width: 100%;
   width: auto\9;
-  height: auto;
-  vertical-align: middle;
+  height: auto\9;
+  vertical-align: bottom;
   border: 0;
-  position: absolute;
-  bottom: 103px;
-  left: 1075px;
+  position: fixed;
+  float:right;
+  bottom: 100px;
+  margin-right:10px;
+  /*left: 1020px;*/
   -ms-interpolation-mode: bicubic;
   background-image: url('/assets/children_web.png');  
-  overflow: auto;
+  
   background-position: 100%;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
