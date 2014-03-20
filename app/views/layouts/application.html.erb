@@ -9,9 +9,10 @@
        <%= render 'shared/headernav' %>  
       <!-- body  -->
       <%= bootstrap_flash %>
-       <%= yield %> 
+       <%= yield %>
        <!-- Footer -->
-       <%= render 'shared/footer' %>  
+       <%= yield :footer%>
+       <!-- <%#= render 'shared/footer' %>   -->
     
        <!-- Javascript --> 
       

@@ -1,37 +1,33 @@
-<% content_for :title, "Sign Up" %>
-            
+<% content_for :title, "Sign Up" %>     
        			
 <div class="container"> 
   <div class="row">
-                    <div class="span12">
-                                                   
-                              <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-                                <%= devise_error_messages! %>
-                                <%= f.hidden_field :role, value: "Staff" %>                               
-                                
-                                <p> 
-                                  <%= f.label :username %><br />
-                                  <%= f.text_field :username, placeholder: "your username...." %> 
-                                </p>
-                                <p> 
-                                  <%= f.label :password %><br />
-                                  <%= f.password_field :password, placeholder: "your password...." %> 
-                                </p>  
-                                <p> 
-                                  <%= f.label :password_confirmation %><br />
-                                  <%= f.password_field :password_confirmation, placeholder: "confirmation your password...." %> 
-                                </p>                             
-                               
-                                                        
-                                <p class="login button"> 
-                                  <input type="submit" value="Sign Up" />
-                                </p>
-                                <p><%= render "devise/shared/links" %></p>     	
-                                
-                                			
-                              <% end %>                                      
-                    </div>
-                  </div>               
+    <div class="span4"></div>
+      <div class="span4" id="wrapper">                                                   
+        <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.hidden_field :role, value: "Staff" %>                             
+        
+          <p> 
+            <%= f.label :username %><br />
+            <%= f.text_field :username, placeholder: "your username...." %> 
+          </p>
+          <p> 
+            <%= f.label :password %><br />
+            <%= f.password_field :password, placeholder: "your password...." %> 
+          </p>  
+          <p> 
+            <%= f.label :password_confirmation %><br />
+            <%= f.password_field :password_confirmation, placeholder: "confirmation your password...." %> 
+          </p>                            
+          <p class="login button"> 
+            <input type="submit" value="Sign Up" />
+          </p>
+          <p><%= render "devise/shared/links" %></p> 			
+        <% end %>                                      
+      </div>
+      <div class="span4"></div>
+  </div>               
 </div>  
        
     

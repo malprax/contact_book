@@ -38,6 +38,8 @@ a.hiddenanchor{
 	margin: auto;	
 	width: 360px;
 	position: relative;	
+  /*margin: 0 0 0 -10%;
+  left: 20%;*/
 }
 #wrappercontact{
 	width: 60%;
