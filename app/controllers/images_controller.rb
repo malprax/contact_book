@@ -2,11 +2,14 @@ class ImagesController < ApplicationController
    load_and_authorize_resource
   # before_action :authenticate_user!
   before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :get_gallery
 
   # GET /images
   # GET /images.json
+  
+  
   def index   
-    @images = Image.all
+    @images = @gallery.images
   end
 
   # GET /images/1
@@ -16,7 +19,7 @@ class ImagesController < ApplicationController
 
   # GET /images/new
   def new
-    @image = Image.new
+    @image = Image.new(:gallery_id => params[:gallery_id])
   end
 
   # GET /images/1/edit
@@ -25,12 +28,12 @@ class ImagesController < ApplicationController
 
   # POST /images
   # POST /images.json
-  def create
-    @image = Image.new(image_params)
+  def create    
+    @image = @gallery.images.new(image_params)
 
     respond_to do |format|
       if @image.save
-        format.html { redirect_to @image, notice: 'Image was successfully created.' }
+        format.html { redirect_to [@gallery, @image], notice: 'Image was successfully created.' }
         format.json { render action: 'show', status: :created, location: @image }
       else
         format.html { render action: 'new' }
@@ -44,7 +47,7 @@ class ImagesController < ApplicationController
   def update
     respond_to do |format|
       if @image.update(image_params)
-        format.html { redirect_to @image, notice: 'Image was successfully updated.' }
+        format.html { redirect_to @image.gallery, notice: 'Image was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -58,19 +61,22 @@ class ImagesController < ApplicationController
   def destroy
     @image.destroy
     respond_to do |format|
-      format.html { redirect_to images_url }
+      format.html { redirect_to @image.gallery }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def get_gallery
+      @gallery = Gallery.find(params[:gallery_id])
+    end
     def set_image
       @image = Image.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:title, :picture)
+      params.require(:image).permit(:title, :picture, :gallery_id)
     end
 end

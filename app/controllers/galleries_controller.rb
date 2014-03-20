@@ -9,7 +9,8 @@ class GalleriesController < ApplicationController
 
   # GET /galleries/1
   # GET /galleries/1.json
-  def show
+  def show    
+   
   end
 
   # GET /galleries/new

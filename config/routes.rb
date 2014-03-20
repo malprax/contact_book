@@ -1,6 +1,8 @@
 ContactBook::Application.routes.draw do
  
-  resources :galleries 
+  resources :galleries do
+    resources :images
+  end 
 
   resources :locations
 
@@ -9,7 +11,7 @@ ContactBook::Application.routes.draw do
   resources :employments
   resources :messages
   get '/contact_us' => 'messages#new'
-  resources :images
+  
   resources :pages#, only: [:index, :new, :create]
   #resources :pages, path:"", except: [:index, :new, :create]
   # get '*id', to: 'pages#show'

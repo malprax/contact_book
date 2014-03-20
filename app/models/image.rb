@@ -1,7 +1,8 @@
 class Image < ActiveRecord::Base
- attr_accessible :title, :picture
+ attr_accessible :title, :picture, :gallery_id
  validates :title, presence: true
  mount_uploader :picture, ImageUploader 
+ belongs_to :gallery
  
  
  
