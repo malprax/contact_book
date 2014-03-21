@@ -1,38 +1,20 @@
 <%# title "Galleries" %>
-
-<% for gallery in @galleries %>
-  <div class="gallery">
-    <h2><%= link_to gallery.name, gallery %></h2>
-    Images: <%#= gallery.images.size %>
+<div class="container">
+  <div class="row">
+    <% for gallery in @galleries %>
+    <div class="span3">
+      <h2><%= link_to gallery.name, gallery %></h2>
+      Images: <%#= gallery.images.size %>
+    </div>
   </div>
-<% end %>
-
-<p><%= link_to "New Gallery", new_gallery_path %></p>
-
-<!-- <h1>Listing galleries</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @galleries.each do |gallery| %>
-      <tr>
-        <td><%= gallery.name %></td>
-        <td><%= link_to 'Show', gallery %></td>
-        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+  <div class="row">
     <% end %>
-  </tbody>
-</table>
+    
+    <div class="span3">
+      <%= link_to "New Gallery", new_gallery_path %>
+    </div>
+  </div>
+</div>
 
-<br>
 
-<%= link_to 'New Gallery', new_gallery_path %> -->
+ 
