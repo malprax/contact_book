@@ -27,7 +27,8 @@ ContactBook::Application.routes.draw do
   #our campus
   get '/facilities' => 'pages#show', :defaults => { :id => '18' }
   get '/our_staff' => 'pages#show', :defaults => { :id => '19' }
-  get '/head_of_school_welcome' => 'pages#show', :defaults => { :id => '17' }
+  get '/head_of_note' => 'pages#show', :defaults => { :id => '17' }
+  get '/gallery' => 'images#index'
   
   #curriculum
   get '/pre_school' => 'pages#show', :defaults => { :id => '15' }
@@ -35,7 +36,7 @@ ContactBook::Application.routes.draw do
   
   #programs
   get '/language_support' => 'pages#show', :defaults => { :id => '5' }
-  get '/learning_support_for_special_need' => 'pages#show', :defaults => { :id => '6' }
+  get '/learning_support' => 'pages#show', :defaults => { :id => '6' }
   get '/student_welfare_program' => 'pages#show', :defaults => { :id => '7' }
   get '/excursion_or_fieldtrip' => 'pages#show', :defaults => { :id => '8' }
   get '/extracurricular_activity' => 'pages#show', :defaults => { :id => '9' }

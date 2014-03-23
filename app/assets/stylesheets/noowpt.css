@@ -18,6 +18,7 @@
   color: rgba(0,0,0,1);
   margin:0px;
   text-align:left;
+/*  bottom:80px;*/
 }
 
 #lead2 {
@@ -66,6 +67,14 @@ outline: 0;
   background-color: #FFFFFF;
   background-size: contain;
  
+}
+
+.bg{
+  background-image: url('/assets/noow-couch-bg4.png');    
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-size: contain;
 }
 
 

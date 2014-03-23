@@ -211,6 +211,24 @@ contact_us sign in up dan reset itu memiliki jarak yang terlalu jauh dengan foot
 
 
 
+#22 maret 2014
+
+1. Tulisan high quality tepat dibawah logo dan panjangnya sama
+2. background 1800x800 px
+3. huruf turun semua
+4. start here di remove
+5. founder message di about  ada paling atas
+6. desain page sesusai format dari word
+7. head of note
+8. curriculum -> add calender
+9. galleri - our staff
+10. learning support -- no special
+11. employ -- employment
+12. contact ada dua tombol contact us contact admission
+
+
+
+
   
   
 

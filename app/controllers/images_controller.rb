@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
    load_and_authorize_resource
-  # before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:index]
   before_action :set_image, only: [:show, :edit, :update, :destroy]
   before_action :get_gallery
 

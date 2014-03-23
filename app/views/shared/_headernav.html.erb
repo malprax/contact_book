@@ -26,10 +26,9 @@
                                      href="#">
                                       About                                      
                                     </a>
-                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
+                                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                                               <li><%= link_to 'Founder Message', founder_message_path %></li>
                                     <li><%= link_to 'Our Philosophy', our_philosophy_path %></li>
-                                    <li><%= link_to 'Vision And Mission', vision_and_mission_path %></li>
-                                    <li><%= link_to 'Founder Message', founder_message_path %></li>
+                                    <li><%= link_to 'Vision And Mission', vision_and_mission_path %></li>    
                                     <li><%= link_to 'High-Quality Education', high_quality_education_path %></li>
                                     <li><%= link_to 'Right And Responsibility', right_and_responsibility_path %></li>                                 
                                   </ul>
@@ -44,9 +43,10 @@
                                      Campus                                      
                                     </a>
                                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
-                                    <li><%= link_to 'Head Of School Welcome', head_of_school_welcome_path %></li>
+                                    <li><%= link_to 'Head Of Note', head_of_note_path %></li>
                                     <li><%= link_to 'Facilities', facilities_path %></li>
-                                    <li><%= link_to 'Our Staff', our_staff_path %></li>                               
+                                    <li><%= link_to 'Our Staff', our_staff_path %></li>    
+                                    <li> <%= link_to 'Gallery', galleries_path %> </li>                           
                                   </ul>
                                 </li>                               
                                 <!--  -->
@@ -61,7 +61,8 @@
                                     </a>
                                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
                                     <li><%= link_to 'Pre-school', pre_school_path %></li>
-                                    <li><%= link_to 'Primary School', primary_school_path %></li>                                             
+                                    <li><%= link_to 'Primary School', primary_school_path %></li>   
+                                    li><%= link_to 'Calendar', "#" %></li>                                                
                                   </ul>
                                 </li>
                                 <!--  -->
@@ -74,7 +75,7 @@
                                     </a>
                                   <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownMenu">                  
                                     <li><%= link_to 'Language Support', language_support_path %></li>
-                                    <li><%= link_to 'Learning Support For Special Need', learning_support_for_special_need_path %></li>
+                                    <li><%= link_to 'Learning Support', learning_support_path %></li>
                                     <li><%= link_to 'Student Welfare Program', student_welfare_program_path %></li>
                                     <li><%= link_to 'Excursion / Fieldtrip', excursion_or_fieldtrip_path %></li>
                                     <li><%= link_to 'Extracurricular Activity', extracurricular_activity_path %></li>
@@ -91,7 +92,7 @@
                                 </li>
                                 <!--  -->
                                 <li>
-                                     <%= link_to 'Employee'.html_safe, employments_path %>
+                                     <%= link_to 'Employment'.html_safe, employments_path %>
                                 </li>                               
                                 
                                  <li > <%= link_to 'Contact'.html_safe, contact_path, "data-no-turbolink" => true %> </li>
@@ -110,7 +111,7 @@
                                     <% if can? :manage, @pages %>
                                      <li> <%= link_to 'Mailbox', messages_path%> </li> 
                                     <li> <%= link_to 'Page', pages_path %> </li> 
-                                    <li> <%= link_to 'Image', galleries_path %> </li>
+                                    
                                     <li> <%= link_to "Cpanel", "http://euly.dnsbit.net/cpanel" %></li>
                                     <% end %>
                                     
