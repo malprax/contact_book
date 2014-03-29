@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140308050549) do
+ActiveRecord::Schema.define(version: 20140329003542) do
 
   create_table "employments", force: true do |t|
     t.string   "title"
@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(version: 20140308050549) do
     t.string   "name"
     t.text     "input_text"
     t.string   "slug"
-    t.string   "parent_id"
+    t.string   "ancestry"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "pages", ["parent_id"], name: "index_pages_on_parent_id", using: :btree
+  add_index "pages", ["ancestry"], name: "index_pages_on_ancestry", using: :btree
 
   create_table "simple_captcha_data", force: true do |t|
     t.string   "key",        limit: 40

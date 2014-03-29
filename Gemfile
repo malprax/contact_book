@@ -109,6 +109,8 @@ gem "mini_magick"
 gem "rmagick"     
 gem 'unf' 
 
+#tree base navigation
+gem 'ancestry'
 
 #gem 'client_side_validations'
 #gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'

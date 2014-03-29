@@ -14,13 +14,13 @@ ContactBook::Application.routes.draw do
   
   resources :pages#, only: [:index, :new, :create]
   #resources :pages, path:"", except: [:index, :new, :create]
-  # get '*id', to: 'pages#show'
+ # get '*id', to: 'pages#show'
   
   ####################### Navigasi #########################################
   #about us     
-  get '/our_philosophy' => 'pages#show', :defaults => { :id => '20' }
+  get '/our_philosophy' => 'pages#show', :defaults => { :id => '22' }
   get '/vision_and_mission' => 'pages#show', :defaults => { :id => '21' }  
-  get '/founder_message' => 'pages#show', :defaults => { :id => '22' }
+  get '/founder_message' => 'pages#show', :defaults => { :id => '20' }
   get '/high_quality_education' => 'pages#show', :defaults => { :id => '23' }
   get '/right_and_responsibility' => 'pages#show', :defaults => { :id => '24' }
   

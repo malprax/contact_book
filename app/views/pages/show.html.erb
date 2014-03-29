@@ -1,47 +1,4 @@
-<%# content_for :title, @page.name %>
-
-<!-- container -->
-    <!-- <div class="row">
-     
-      <div class="span3">
-        <div class="well sidebar-nav">          
-          <ul class="nav nav-list">
-            <li class="nav-header"><h5>Sidebar</h5></li> -->
-            <!-- <li><%#= render 'submenu_pages', pages:  @page.root.descendants.arrange %></li> -->
-          <!-- </ul> -->
-        <!-- </div> -->
-        <!--/.well -->
-      <!-- </div> -->
-      <!--/span-->
-     
-      
-      <!-- <div class="span9"> -->
-        <!-- <%= bootstrap_flash %> -->
-        <!-- <div class="breadcrumb"> -->
-          <!-- <%# @page.ancestors.each do |page| %>
-            <%#= link_to page.name, page %> &gt;
-          <%# end %> -->
-        <!-- </div> -->
-
-        <!-- <h3> 
-          <% string = @page.name %>
-          <%= string.capitalize %>
-        </h3>
-        <p> -->  
-          <!-- <%= @page.input_text %>
-        </p> -->
-        <%# if user_signed_in? %>
-          <%# if can? :update, page_path %>
-            <%#= link_to 'Edit', edit_page_path(@page) %> 
-            <%#= link_to 'Back', pages_path %>
-          <%# end %>
-        <%# end %>        
-      <!-- </div>
-      
-    </div> -->
-    <!--/row-->
-<!-- /container -->
-    
+<%# content_for :title, @page.name %>   
 
     <!-- Page Title -->
     <div class="page-title visible-desktop">
@@ -73,24 +30,32 @@
 
     <!-- Content Page Text -->
     <div class="about-us container">
-        <div class="row">
-          
-            <div class="about-us-text span12">                  
-                  <p> <%= raw @page.input_text %></p>
-            </div>               
-       
-            <div>  
-                  <% if signed_in? %>             
-                  <p class="pull-left"><%#= @page.input_text %></p>               
-                  <p class="pull-right"> 
-                    <% if can? :update, @page %>
-                    <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> | 
-                    <% end %> <% if can? :manage, @pages %>
-                    <%= link_to 'Index', pages_path, class: "editlink" %>
-                    <% end %>
-                  </p>  
-                  <% end %>             
-            </div>
+        <div class="row">        
+              <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
+                  <% @page.root.children.each do |page| %>
+                  <li>
+                    <%= link_to_unless_current page.name, page, id: 'tabe' %>
+                    <%#= render 'submenu_pages', pages: page.children if page.children.present? %>
+                  </li>
+                  <% end %>
+                </ul>
+                <div class="tab-content">
+                  <div class="about-us-text">
+                        <p> <%= raw @page.input_text %></p>
+                        <% if signed_in? %>             
+                        <p class="pull-left"><%#= @page.input_text %></p>               
+                        <p class="pull-right"> 
+                          <% if can? :update, @page %>
+                          <%= link_to 'Edit', edit_page_path(@page) , class: "editlink"%> | 
+                          <% end %> <% if can? :manage, @pages %>
+                          <%= link_to 'Index', pages_path, class: "editlink" %>
+                          <% end %>
+                        </p>  
+                        <% end %>
+                  </div>
+                </div>
+              </div>           
         </div>
     </div>    
     

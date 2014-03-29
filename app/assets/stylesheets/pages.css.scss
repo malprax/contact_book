@@ -122,5 +122,33 @@ margin-left:150px;
   margin-left:150px;
 }
 
+.nav-tabs > li > a {
+  margin-right: 5px;
+  margin-left: -12px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.nav-tabs > li {
+  color: #0088cc;
+  
+ 
+  margin-bottom:0px;
+  
+}
+
+.nav-tabs > li:hover{  
+  border-color: #FFD43C #dddddd #FFD43C #FFD43C;
+}
+
+.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+
 
 
