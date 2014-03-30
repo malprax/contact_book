@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
   
-  def index
-    
-    @message = Message.new 
+  def index    
+   
   end
   
   def homesample
