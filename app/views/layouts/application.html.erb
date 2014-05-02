@@ -4,17 +4,17 @@
     <%= render 'shared/head_tag' %>
   </head>
   <body>
-   
-       <!-- Header -->
-       <%= render 'shared/headernav' %>  
+       <!-- Header --> 
+       <%= content_for?(:yellow_nav)? yield(:yellow_nav): yield(:green_nav) %>       
+      
       <!-- body  -->
       <%= bootstrap_flash %>
        <%= yield %>
        <!-- Footer -->
        <%= yield :footer%>
-       <!-- <%#= render 'shared/footer' %>   -->
-    
-       <!-- Javascript --> 
+       <!-- <%#= render 'shared/footer' %>   -->    
+       <!-- Javascript -->        
+       
       
         
   </body>

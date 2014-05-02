@@ -1,4 +1,8 @@
-<%# content_for :title, @page.name %>   
+<%# content_for :title, @page.name %>
+    <!-- green navigation  -->
+    <% content_for :green_nav do %>
+       <%= render 'shared/green_nav' %>  
+    <% end %>  
 
     <!-- Page Title -->
     <div class="page-title visible-desktop">
