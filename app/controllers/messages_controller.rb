@@ -2,6 +2,8 @@ class MessagesController < ApplicationController
   # load_and_authorize_resource
   before_action :authenticate_user!, except: [:create, :new]
   before_action :set_message, only: [:show, :edit, :update, :destroy]
+  caches_page :public
+  cache_action :show
 
   # GET /messages
   # GET /messages.json
