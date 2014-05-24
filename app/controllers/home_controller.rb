@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
   caches_page :public
-  cache_action :index
-  
-  def index    
+  caches_action :index  
+  def index   
    
   end
   
