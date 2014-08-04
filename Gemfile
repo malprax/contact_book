@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -48,7 +48,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -78,10 +78,7 @@ gem 'minitest'
 gem 'tzinfo'
 
 #editor
-
-gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
-                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
-#gem 'ckeditor_rails'
+gem 'ckeditor'
 
 #user_authority
 gem 'cancan'
@@ -90,8 +87,8 @@ gem 'cancan'
 gem 'puma'
 
 #cloudfolder
-# gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
-# gem "paperclip-dropbox" 
+  gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+  gem "paperclip-dropbox" 
 # gem 'cocaine'
 # gem 'dropbox-sdk'
 
